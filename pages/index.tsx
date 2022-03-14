@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
 
-import Head from "../components/Head";
-import Home from "../components/Home";
+import HeadContent from "../components/HeadContent";
+import Index from "../components/Index";
 
-const Index: NextPage = () => {
+const IndexPage: NextPage = () => {
 	return (
 		<>
-			<Head />
-			<Home />
+			<HeadContent />
+			<Index />
 		</>
 	);
 };
 
-export default Index;
+export default IndexPage;

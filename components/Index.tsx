@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 							Email
 						</a>
 						<a type="button" className="btn btn-dark" href="/resume" target="_blank" onClick={(e) => e.currentTarget.blur()}>
-							Résumé
+							Resume
 						</a>
 						<a
 							type="button"
@@ -62,11 +62,11 @@ const Home: React.FC = () => {
 						<h2 className="centered">Experience</h2>
 						<p>I am currently looking for new opportunities!</p>
 						<p>
-							I recently finished working as contractor at&nbsp;
+							I recently finished working as a contractor at&nbsp;
 							<a href="https://www.financialpartners.com/" target="_blank" rel="noreferrer">
 								Farm Credit Financial Partners
 							</a>
-							, where I previously held a full-time position as well. I also used to work for&nbsp;
+							, where I previously held a full-time position as well. Prior to that I worked for&nbsp;
 							<a href="https://gdmissionsystems.com/" target="_blank" rel="noreferrer">
 								General Dynamics Mission Systems
 							</a>
@@ -124,15 +124,53 @@ const Home: React.FC = () => {
 								</div>
 							</div>
 							<div className="column">
-								<img src="/img/ski.png" className="card-img project-img" />
+								<a href="https://skifreejs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="/img/ski.png" className="card-img project-img" />
+								</a>
 							</div>
 						</div>
 
 						<div id="discit" className="row">
 							<div className="column vert-flex">
 								<div>
+									<h4>discit</h4>
+									<p>A responsive disc golf disc search engine. Written in TypeScript and React (Next.js).</p>
+									<div>
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="https://discit.vercel.app"
+											target="_blank"
+											rel="noreferrer"
+											onClick={(e) => e.currentTarget.blur()}
+										>
+											Launch
+										</a>
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="https://github.com/cdleveille/discit"
+											target="_blank"
+											rel="noreferrer"
+											onClick={(e) => e.currentTarget.blur()}
+										>
+											Repo
+										</a>
+									</div>
+								</div>
+							</div>
+							<div className="column">
+								<a href="https://discit.vercel.app" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="/img/discit.png" className="card-img project-img" />
+								</a>
+							</div>
+						</div>
+
+						<div id="discit-api" className="row">
+							<div className="column vert-flex">
+								<div>
 									<h4>discit-api</h4>
-									<p>RESTful API for disc golf discs.</p>
+									<p>RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostreSQL.</p>
 									<div>
 										<a
 											type="button"
@@ -142,7 +180,7 @@ const Home: React.FC = () => {
 											rel="noreferrer"
 											onClick={(e) => e.currentTarget.blur()}
 										>
-											Use
+											Launch
 										</a>
 										<a
 											type="button"
@@ -158,7 +196,9 @@ const Home: React.FC = () => {
 								</div>
 							</div>
 							<div className="column">
-								<img src="/img/discit.png" className="card-img project-img" />
+								<a href="https://discitapi.herokuapp.com/" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="/img/discit-api.png" className="card-img project-img" />
+								</a>
 							</div>
 						</div>
 
@@ -168,7 +208,13 @@ const Home: React.FC = () => {
 									<h4>slime-volleyball</h4>
 									<p>A remake of the classic browser game. Python (desktop) & JavaScript (web) versions.</p>
 									<div>
-										<a type="button" className="btn btn-dark" href="/slime" target="_blank">
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="/slime"
+											target="_blank"
+											onClick={(e) => e.currentTarget.blur()}
+										>
 											Play
 										</a>
 										<a
@@ -185,7 +231,9 @@ const Home: React.FC = () => {
 								</div>
 							</div>
 							<div className="column">
-								<img src="/img/slime.png" className="card-img project-img" />
+								<a href="/slime" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="/img/slime.png" className="card-img project-img" />
+								</a>
 							</div>
 						</div>
 						<div id="putt" className="row">
@@ -194,7 +242,13 @@ const Home: React.FC = () => {
 									<h4>puttjs</h4>
 									<p>2D minigolf game written in JavaScript/HTML5 Canvas.</p>
 									<div>
-										<a type="button" className="btn btn-dark" href="/putt" target="_blank">
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="/putt"
+											target="_blank"
+											onClick={(e) => e.currentTarget.blur()}
+										>
 											Play
 										</a>
 										<a
@@ -211,7 +265,9 @@ const Home: React.FC = () => {
 								</div>
 							</div>
 							<div className="column">
-								<img src="/img/putt.png" className="card-img project-img" />
+								<a href="/putt" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="/img/putt.png" className="card-img project-img" />
+								</a>
 							</div>
 						</div>
 						<div id="pioholdem" className="row">
@@ -235,7 +291,14 @@ const Home: React.FC = () => {
 								</div>
 							</div>
 							<div className="column">
-								<img src="/img/pioholdem.png" className="card-img project-img" />
+								<a
+									href="https://github.com/cdleveille/pioholdem"
+									target="_blank"
+									rel="noreferrer"
+									onClick={(e) => e.currentTarget.blur()}
+								>
+									<img src="/img/pioholdem.png" className="card-img project-img" />
+								</a>
 							</div>
 						</div>
 					</div>
