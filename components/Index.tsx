@@ -77,8 +77,8 @@ const Home: React.FC = () => {
 							&nbsp;where I earned a B.S. in Computer Science.
 						</p>
 						<p>
-							I have experience with many programming languages and technologies, but am most proficient in SQL, C#, Node.js,
-							JavaScript, and TypeScript. I am also professionally&nbsp;
+							I have professional experience programming primarily in SQL, C#, Java, and JavaScript, and have dedicated significant time
+							learning Node.js, TypeScript, and React outside of work. I am also professionally&nbsp;
 							<a
 								href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=lI01VISrcHRWF+rA/h9A4dipkjUutddgtd6X9RIuOTJs72Y6ykIDVowxSOLeWYVa"
 								target="_blank"
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
 							>
 								certified
 							</a>
-							&nbsp;in the Salesforce Platform.
+							&nbsp;as a developer in the Salesforce Platform.
 						</p>
 					</div>
 					<div id="projects" className="section">
