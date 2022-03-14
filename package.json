@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "prettier": "prettier --write \"{,!(node_modules),!(.next)/**/}*.{js,jsx,ts,tsx,css}\"",
-    "clean": "yarn autoclean --force"
+    "prettier": "prettier --write \"{,!(node_modules),!(.next),!(public)/**/}*.{js,jsx,ts,tsx}\"",
+    "clean": "yarn autoclean --force",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "12.1.0",
