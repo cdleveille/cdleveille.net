@@ -4,8 +4,8 @@
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
-  "name": "cdleveille-next",
-  "short_name": "cdleveille-next",
+  "name": "cdleveille.net",
+  "short_name": "cdleveille.net",
   "description": "Chris Leveille - Software Engineer",
   "icons": [
     {
