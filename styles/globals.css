@@ -12,6 +12,10 @@ body {
 	font-size: 16px;
 }
 
+a {
+	transition: 0.3s;
+}
+
 a:link,
 a:visited {
 	color: #59a6ff;
@@ -29,14 +33,19 @@ a:hover {
 }
 
 img {
-	border: 2px solid #0a0a0a;
 	max-width: 100%;
 	height: auto;
+}
+
+#pic {
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 
 #prof-pic {
 	width: 300px;
 	border-radius: 50%;
+	border: 2px solid #0a0a0a;
 }
 
 #title {

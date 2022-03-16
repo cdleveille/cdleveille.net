@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 						</div>
 						<p>Welcome! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
-					<div id="pic" className="section centered">
+					<div id="pic" className="centered">
 						<img src="img/cdleveille.png" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
 					</div>
 					<div id="links" className="section centered">
