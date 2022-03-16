@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 						<p>Welcome! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
 					<div id="pic" className="centered">
-						<img src="img/cdleveille.png" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
+						<img src="img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
 					</div>
 					<div id="links" className="section centered">
 						<a
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://skifreejs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/ski.png" className="card-img project-img" alt="skifreejs" width="390" height="248" />
+									<img src="img/ski.webp" className="card-img project-img" alt="skifreejs" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -163,7 +163,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://discit.vercel.app" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/discit.png" className="card-img project-img" alt="discit" width="390" height="248" />
+									<img src="img/discit.webp" className="card-img project-img" alt="discit" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -199,7 +199,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://discitapi.herokuapp.com/" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/discit-api.png" className="card-img project-img" alt="discit-api" width="390" height="248" />
+									<img src="img/discit-api.webp" className="card-img project-img" alt="discit-api" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -234,7 +234,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="/slime" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/slime.png" className="card-img project-img" alt="slime-volleyball" width="390" height="248" />
+									<img src="img/slime.webp" className="card-img project-img" alt="slime-volleyball" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -268,7 +268,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="/putt" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/putt.png" className="card-img project-img" alt="puttjs" width="390" height="248" />
+									<img src="img/putt.webp" className="card-img project-img" alt="puttjs" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -299,7 +299,7 @@ const Home: React.FC = () => {
 									rel="noreferrer"
 									onClick={(e) => e.currentTarget.blur()}
 								>
-									<img src="img/pioholdem.png" className="card-img project-img" alt="pioholdem" width="390" height="248" />
+									<img src="img/pioholdem.webp" className="card-img project-img" alt="pioholdem" width="390" height="248" />
 								</a>
 							</div>
 						</div>
