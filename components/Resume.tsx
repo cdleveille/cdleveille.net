@@ -13,7 +13,7 @@ const Resume: React.FC = () => {
 
 	return (
 		<>
-			<iframe src="/pdf/christopher_leveille_resume_public.pdf#zoom=FitH" style={styles} />
+			<iframe src="pdf/christopher_leveille_resume_public.pdf#zoom=FitH" style={styles} />
 		</>
 	);
 };

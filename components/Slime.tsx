@@ -12,7 +12,7 @@ const Slime: React.FC = () => {
 	return (
 		<>
 			<canvas id="gameScreen" width={0} height={0} style={styles} />
-			<script src="/app/slime/src/slime.js" type="module" defer></script>
+			<script src="app/slime/src/slime.js" type="module" defer></script>
 		</>
 	);
 };

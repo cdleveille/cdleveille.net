@@ -7,11 +7,13 @@ const Home: React.FC = () => {
 				<div className="container-inner">
 					<div id="header" className="section centered">
 						<h1>Chris Leveille</h1>
-						<h5 className="text-muted">Software Engineer</h5>
+						<div id="title" className="text-muted">
+							Software Engineer
+						</div>
 						<p>Welcome! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
 					<div id="pic" className="section centered">
-						<img src="/img/cdleveille.jpg" id="prof-pic" className="rounded-circle" />
+						<img src="img/cdleveille.png" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
 					</div>
 					<div id="links" className="section centered">
 						<a
@@ -94,7 +96,7 @@ const Home: React.FC = () => {
 						<div id="skifreejs" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>skifreejs</h4>
+									<h3>skifreejs</h3>
 									<p>
 										A remake of the classic PC game from Windows Entertainment Pack 3. Written in JavaScript/HTML5 Canvas backed
 										by Node.js.
@@ -125,7 +127,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://skifreejs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="/img/ski.png" className="card-img project-img" />
+									<img src="img/ski.png" className="card-img project-img" alt="skifreejs" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -133,7 +135,7 @@ const Home: React.FC = () => {
 						<div id="discit" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>discit</h4>
+									<h3>discit</h3>
 									<p>A responsive disc golf disc search engine. Written in TypeScript and React (Next.js).</p>
 									<div>
 										<a
@@ -161,7 +163,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://discit.vercel.app" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="/img/discit.png" className="card-img project-img" />
+									<img src="img/discit.png" className="card-img project-img" alt="discit" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -169,7 +171,7 @@ const Home: React.FC = () => {
 						<div id="discit-api" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>discit-api</h4>
+									<h3>discit-api</h3>
 									<p>RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostreSQL.</p>
 									<div>
 										<a
@@ -197,7 +199,7 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="https://discitapi.herokuapp.com/" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="/img/discit-api.png" className="card-img project-img" />
+									<img src="img/discit-api.png" className="card-img project-img" alt="discit-api" width="390" height="248" />
 								</a>
 							</div>
 						</div>
@@ -205,7 +207,7 @@ const Home: React.FC = () => {
 						<div id="slime" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>slime-volleyball</h4>
+									<h3>slime-volleyball</h3>
 									<p>A remake of the classic browser game. Python (desktop) & JavaScript (web) versions.</p>
 									<div>
 										<a
@@ -232,14 +234,14 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="/slime" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="/img/slime.png" className="card-img project-img" />
+									<img src="img/slime.png" className="card-img project-img" alt="slime-volleyball" width="390" height="248" />
 								</a>
 							</div>
 						</div>
 						<div id="putt" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>puttjs</h4>
+									<h3>puttjs</h3>
 									<p>2D minigolf game written in JavaScript/HTML5 Canvas.</p>
 									<div>
 										<a
@@ -266,14 +268,14 @@ const Home: React.FC = () => {
 							</div>
 							<div className="column">
 								<a href="/putt" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="/img/putt.png" className="card-img project-img" />
+									<img src="img/putt.png" className="card-img project-img" alt="puttjs" width="390" height="248" />
 								</a>
 							</div>
 						</div>
 						<div id="pioholdem" className="row">
 							<div className="column vert-flex">
 								<div>
-									<h4>pioholdem</h4>
+									<h3>pioholdem</h3>
 									<p>
 										Heads-up no-limit Texas Holdem bot written in .NET C# - AI from multiple sources including PioSOLVER game
 										trees and Nash Equilibrium push/fold charts.
@@ -297,7 +299,7 @@ const Home: React.FC = () => {
 									rel="noreferrer"
 									onClick={(e) => e.currentTarget.blur()}
 								>
-									<img src="/img/pioholdem.png" className="card-img project-img" />
+									<img src="img/pioholdem.png" className="card-img project-img" alt="pioholdem" width="390" height="248" />
 								</a>
 							</div>
 						</div>
