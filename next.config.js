@@ -13,8 +13,8 @@ module.exports = withPWA({
 	pwa: {
 		dest: "public",
 		register: true,
-		skipWaiting: true,
-		disable: process.env.NEXT_PUBLIC_IS_PROD == "false"
+		skipWaiting: true
 	},
-	nextConfig
+	nextConfig,
+	productionBrowserSourceMaps: true
 });
