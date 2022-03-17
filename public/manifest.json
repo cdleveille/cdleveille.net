@@ -1,7 +1,7 @@
 {
   "theme_color": "#0d1117",
   "background_color": "#171b22",
-  "display": "standalone",
+  "display": "minimal-ui",
   "scope": "/",
   "start_url": "/",
   "name": "cdleveille.net",
