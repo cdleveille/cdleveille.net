@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "prettier": "prettier --write \"{,!(node_modules),!(.next),!(public)/**/}*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write .",
     "clean": "yarn autoclean --force",
     "postinstall": "husky install"
   },

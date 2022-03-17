@@ -4,3 +4,6 @@
 **/build/*
 **/dist/*
 **/public/*
+**/*.json
+**/*.md
+**/bootstrap.min.css
