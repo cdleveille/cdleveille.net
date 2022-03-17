@@ -12,7 +12,7 @@ const Putt: React.FC = () => {
 	return (
 		<>
 			<canvas id="gameScreen" width={0} height={0} style={styles} />
-			<script src="/app/putt/src/putt.js" type="module" defer></script>
+			<script src="/app/putt/src/putt.min.js" type="module" defer></script>
 		</>
 	);
 };
