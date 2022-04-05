@@ -172,7 +172,7 @@ const Home: React.FC = () => {
 							<div className="column vert-flex">
 								<div>
 									<h3>discit-api</h3>
-									<p>RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostreSQL.</p>
+									<p>RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL.</p>
 									<div>
 										<a
 											type="button"
