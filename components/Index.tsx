@@ -62,9 +62,15 @@ const Home: React.FC = () => {
 					</div>
 					<div id="experience" className="section">
 						<h2 className="centered">Experience</h2>
-						<p>I am currently looking for new opportunities!</p>
 						<p>
-							I recently finished working as a contractor at&nbsp;
+							I am currently working full-time for&nbsp;
+							<a href="https://www.windsorsolutions.com/" target="_blank" rel="noreferrer">
+								Windsor Solutions
+							</a>
+							&nbsp;of Northampton, MA.
+						</p>
+						<p>
+							In early 2022 I finished working as a contractor at&nbsp;
 							<a href="https://www.financialpartners.com/" target="_blank" rel="noreferrer">
 								Farm Credit Financial Partners
 							</a>
@@ -79,8 +85,8 @@ const Home: React.FC = () => {
 							&nbsp;where I earned a B.S. in Computer Science.
 						</p>
 						<p>
-							I have professional experience programming primarily in SQL, C#, Java, and JavaScript, and have dedicated significant time
-							learning Node.js, TypeScript, and React outside of work. I am also professionally&nbsp;
+							I have professional programming experience primarily in SQL, C#, Java, and JavaScript, and have dedicated significant time
+							learning Node.js, TypeScript, and React among other technologies outside of work. I am also professionally&nbsp;
 							<a
 								href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=lI01VISrcHRWF+rA/h9A4dipkjUutddgtd6X9RIuOTJs72Y6ykIDVowxSOLeWYVa"
 								target="_blank"
@@ -128,6 +134,42 @@ const Home: React.FC = () => {
 							<div className="column">
 								<a href="https://skifreejs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
 									<img src="img/ski.webp" className="card-img project-img" alt="skifreejs" width="390" height="248" />
+								</a>
+							</div>
+						</div>
+
+						<div id="copterjs" className="row">
+							<div className="column vert-flex">
+								<div>
+									<h3>copterjs</h3>
+									<p>Modern remake of the classic addicting flash game. Written in TypeScript/HTML5 Canvas backed by Node.js.</p>
+									<div>
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="https://copterjs.herokuapp.com"
+											target="_blank"
+											rel="noreferrer"
+											onClick={(e) => e.currentTarget.blur()}
+										>
+											Play
+										</a>
+										<a
+											type="button"
+											className="btn btn-dark"
+											href="https://github.com/cdleveille/copterjs"
+											target="_blank"
+											rel="noreferrer"
+											onClick={(e) => e.currentTarget.blur()}
+										>
+											Repo
+										</a>
+									</div>
+								</div>
+							</div>
+							<div className="column">
+								<a href="https://copterjs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+									<img src="img/copter.webp" className="card-img project-img" alt="copterjs" width="390" height="248" />
 								</a>
 							</div>
 						</div>
