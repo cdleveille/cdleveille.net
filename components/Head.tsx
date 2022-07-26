@@ -1,10 +1,8 @@
-import Head from "next/head";
-import React from "react";
+import NextHead from "next/head";
 
-export const HeadContent: React.FC = () => {
+const Head: React.FC = () => {
 	return (
-		<Head>
-			<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+		<NextHead>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="description" content="Chris Leveille - Software Engineer"></meta>
 			<meta name="theme-color" content="#0d1117"></meta>
@@ -13,8 +11,8 @@ export const HeadContent: React.FC = () => {
 			<link rel="icon" type="image/png" sizes="16x16" href="img/icons/icon-16x16.png" />
 			<link rel="manifest" href="manifest.json" />
 			<title>Chris Leveille - Software Engineer</title>
-		</Head>
+		</NextHead>
 	);
 };
 
-export default HeadContent;
+export default Head;

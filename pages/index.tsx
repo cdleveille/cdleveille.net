@@ -1,8 +1,11 @@
-import React from "react";
+import type { NextPage } from "next";
 
-const Home: React.FC = () => {
+import Head from "../components/Head";
+
+const Index: NextPage = () => {
 	return (
 		<>
+			<Head />
 			<div className="container-outer">
 				<div className="container-inner">
 					<div id="header" className="section centered">
@@ -63,7 +66,7 @@ const Home: React.FC = () => {
 					<div id="experience" className="section">
 						<h2 className="centered">Experience</h2>
 						<p>
-							I am currently working full-time for&nbsp;
+							I currently work full-time for&nbsp;
 							<a href="https://www.windsorsolutions.com/" target="_blank" rel="noreferrer">
 								Windsor Solutions
 							</a>
@@ -86,7 +89,7 @@ const Home: React.FC = () => {
 						</p>
 						<p>
 							I have professional programming experience primarily in SQL, C#, Java, and JavaScript, and have dedicated significant time
-							learning Node.js, TypeScript, and React among other technologies outside of work. I am also professionally&nbsp;
+							to learning Node.js, TypeScript, and React among other technologies outside of work. I am also professionally&nbsp;
 							<a
 								href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=lI01VISrcHRWF+rA/h9A4dipkjUutddgtd6X9RIuOTJs72Y6ykIDVowxSOLeWYVa"
 								target="_blank"
@@ -284,7 +287,7 @@ const Home: React.FC = () => {
 							<div className="column vert-flex">
 								<div>
 									<h3>puttjs</h3>
-									<p>2D minigolf game written in JavaScript/HTML5 Canvas.</p>
+									<p>2D minigolf game concept written in JavaScript/HTML5 Canvas.</p>
 									<div>
 										<a
 											type="button"
@@ -361,4 +364,4 @@ const Home: React.FC = () => {
 	);
 };
 
-export default Home;
+export default Index;

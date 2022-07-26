@@ -1,19 +1,30 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import NextHead from "next/head";
+import { CSSProperties } from "react";
 
-import HeadContent from "../components/HeadContent";
-import Slime from "../components/Slime";
+import Head from "../components/Head";
 
-const SlimePage: NextPage = () => {
+const Slime: NextPage = () => {
+	const styles: CSSProperties = {
+		border: "2px solid black",
+		position: "absolute",
+		top: "50%",
+		left: "50%",
+		transform: "translateX(-50%) translateY(-50%)"
+	};
+
 	return (
 		<>
-			<HeadContent />
-			<Head>
+			<Head />
+			<NextHead>
 				<title>Slime Volleyball</title>
-			</Head>
-			<Slime />
+			</NextHead>
+			<>
+				<canvas id="gameScreen" width={0} height={0} style={styles} />
+				<script src="app/slime/src/slime.min.js" type="module" defer></script>
+			</>
 		</>
 	);
 };
 
-export default SlimePage;
+export default Slime;

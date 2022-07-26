@@ -1,19 +1,29 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import NextHead from "next/head";
+import { CSSProperties } from "react";
 
-import HeadContent from "../components/HeadContent";
-import Resume from "../components/Resume";
+import Head from "../components/Head";
 
-const ResumePage: NextPage = () => {
+const Resume: NextPage = () => {
+	const styles: CSSProperties = {
+		width: "100%",
+		maxWidth: "1200px",
+		height: "100%",
+		position: "absolute",
+		top: "50%",
+		left: "50%",
+		transform: "translateX(-50%) translateY(-50%)"
+	};
+
 	return (
 		<>
-			<HeadContent />
-			<Head>
+			<Head />
+			<NextHead>
 				<title>Chris Leveille - Resume</title>
-			</Head>
-			<Resume />
+			</NextHead>
+			<iframe src="pdf/christopher_leveille_resume_public.pdf#zoom=FitH" style={styles} />
 		</>
 	);
 };
 
-export default ResumePage;
+export default Resume;
