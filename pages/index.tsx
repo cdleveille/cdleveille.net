@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 
+import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
-import Link from "../components/Link";
 import Project from "../components/Project";
 
 const Index: NextPage = () => {
@@ -19,14 +18,14 @@ const Index: NextPage = () => {
 						<p>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
 					<div id="pic" className="centered">
-						<Image src="/img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width={300} height={300} />
+						<img src="img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
 					</div>
 					<div id="links" className="section centered">
-						<Link href="mailto:cdleveille@gmail.com" label="Email" />
-						<Link href="/resume" label="Resume" />
-						<Link href="https://www.linkedin.com/in/cdleveille/" label="LinkedIn" />
-						<Link href="https://github.com/cdleveille" label="GitHub" />
-						<Link href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
+						<ButtonLink href="mailto:cdleveille@gmail.com" label="Email" />
+						<ButtonLink href="/resume" label="Resume" />
+						<ButtonLink href="https://www.linkedin.com/in/cdleveille/" label="LinkedIn" />
+						<ButtonLink href="https://github.com/cdleveille" label="GitHub" />
+						<ButtonLink href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
 					</div>
 					<div id="experience" className="section">
 						<h2 className="centered">Experience</h2>
