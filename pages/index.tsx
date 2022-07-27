@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 import Head from "../components/Head";
+import Link from "../components/Link";
+import Project from "../components/Project";
 
 const Index: NextPage = () => {
 	return (
@@ -13,55 +16,17 @@ const Index: NextPage = () => {
 						<div id="title" className="text-muted">
 							Software Engineer
 						</div>
-						<p>Welcome! My name is Chris and I am a software engineer from Western Massachusetts.</p>
+						<p>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
 					<div id="pic" className="centered">
-						<img src="img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
+						<Image src="/img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width={300} height={300} />
 					</div>
 					<div id="links" className="section centered">
-						<a
-							type="button"
-							className="btn btn-dark"
-							href="mailto:cdleveille@gmail.com"
-							target="_blank"
-							rel="noreferrer"
-							onClick={(e) => e.currentTarget.blur()}
-						>
-							Email
-						</a>
-						<a type="button" className="btn btn-dark" href="/resume" target="_blank" onClick={(e) => e.currentTarget.blur()}>
-							Resume
-						</a>
-						<a
-							type="button"
-							className="btn btn-dark"
-							href="https://www.linkedin.com/in/cdleveille/"
-							target="_blank"
-							rel="noreferrer"
-							onClick={(e) => e.currentTarget.blur()}
-						>
-							LinkedIn
-						</a>
-						<a
-							type="button"
-							className="btn btn-dark"
-							href="https://github.com/cdleveille"
-							target="_blank"
-							rel="noreferrer"
-							onClick={(e) => e.currentTarget.blur()}
-						>
-							GitHub
-						</a>
-						<a
-							type="button"
-							className="btn btn-dark"
-							href="https://trailblazer.me/id/cdleveille"
-							target="_blank"
-							rel="noreferrer"
-							onClick={(e) => e.currentTarget.blur()}
-						>
-							Trailblazer
-						</a>
+						<Link href="mailto:cdleveille@gmail.com" label="Email" />
+						<Link href="/resume" label="Resume" />
+						<Link href="https://www.linkedin.com/in/cdleveille/" label="LinkedIn" />
+						<Link href="https://github.com/cdleveille" label="GitHub" />
+						<Link href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
 					</div>
 					<div id="experience" className="section">
 						<h2 className="centered">Experience</h2>
@@ -102,252 +67,61 @@ const Index: NextPage = () => {
 					</div>
 					<div id="projects" className="section">
 						<h2 className="centered">Projects</h2>
-						<div id="skifreejs" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>skifreejs</h3>
-									<p>
-										A remake of the classic PC game from Windows Entertainment Pack 3. Written in JavaScript/HTML5 Canvas backed
-										by Node.js.
-									</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://skifreejs.herokuapp.com"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Play
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/skifreejs"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="https://skifreejs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/ski.webp" className="card-img project-img" alt="skifreejs" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-
-						<div id="copterjs" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>copterjs</h3>
-									<p>Modern remake of the classic addicting flash game. Written in TypeScript/HTML5 Canvas backed by Node.js.</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://copterjs.herokuapp.com"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Play
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/copterjs"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="https://copterjs.herokuapp.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/copter.webp" className="card-img project-img" alt="copterjs" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-
-						<div id="discit" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>discit</h3>
-									<p>A responsive disc golf disc search engine. Written in TypeScript and React (Next.js).</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://discit.vercel.app"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Launch
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/discit"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="https://discit.vercel.app" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/discit.webp" className="card-img project-img" alt="discit" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-
-						<div id="discit-api" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>discit-api</h3>
-									<p>RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL.</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://discitapi.herokuapp.com/"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Launch
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/discit-api"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="https://discitapi.herokuapp.com/" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/discit-api.webp" className="card-img project-img" alt="discit-api" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-
-						<div id="slime" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>slime-volleyball</h3>
-									<p>A remake of the classic browser game. Python (desktop) & JavaScript (web) versions.</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="/slime"
-											target="_blank"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Play
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/slime-volleyball"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="/slime" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/slime.webp" className="card-img project-img" alt="slime-volleyball" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-						<div id="putt" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>puttjs</h3>
-									<p>2D minigolf game concept written in JavaScript/HTML5 Canvas.</p>
-									<div>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="/putt"
-											target="_blank"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Play
-										</a>
-										<a
-											type="button"
-											className="btn btn-dark"
-											href="https://github.com/cdleveille/puttjs"
-											target="_blank"
-											rel="noreferrer"
-											onClick={(e) => e.currentTarget.blur()}
-										>
-											Repo
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<a href="/putt" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-									<img src="img/putt.webp" className="card-img project-img" alt="puttjs" width="390" height="248" />
-								</a>
-							</div>
-						</div>
-						<div id="pioholdem" className="row">
-							<div className="column vert-flex">
-								<div>
-									<h3>pioholdem</h3>
-									<p>
-										Heads-up no-limit Texas Holdem bot written in .NET C# - AI from multiple sources including PioSOLVER game
-										trees and Nash Equilibrium push/fold charts.
-									</p>
-									<a
-										type="button"
-										className="btn btn-dark"
-										href="https://github.com/cdleveille/pioholdem"
-										target="_blank"
-										rel="noreferrer"
-										onClick={(e) => e.currentTarget.blur()}
-									>
-										Repo
-									</a>
-								</div>
-							</div>
-							<div className="column">
-								<a
-									href="https://github.com/cdleveille/pioholdem"
-									target="_blank"
-									rel="noreferrer"
-									onClick={(e) => e.currentTarget.blur()}
-								>
-									<img src="img/pioholdem.webp" className="card-img project-img" alt="pioholdem" width="390" height="248" />
-								</a>
-							</div>
-						</div>
+						<Project
+							name="skifreejs"
+							description="A remake of the classic PC game from Windows Entertainment Pack 3. Written in JavaScript/HTML5 Canvas backed by Node.js."
+							linkHref="https://skifreejs.herokuapp.com"
+							repoLinkHref="https://github.com/cdleveille/skifreejs"
+							imgSrc="/img/ski.webp"
+							action="Play"
+						/>
+						<Project
+							name="copterjs"
+							description="Modern remake of the classic addicting flash game. Written in TypeScript/HTML5 Canvas backed by Node.js."
+							linkHref="https://copterjs.herokuapp.com"
+							repoLinkHref="https://github.com/cdleveille/copterjs"
+							imgSrc="/img/copter.webp"
+							action="Play"
+						/>
+						<Project
+							name="discit"
+							description="A responsive disc golf disc search engine. Built with Next.js and TypeScript."
+							linkHref="https://discit.vercel.app"
+							repoLinkHref="https://github.com/cdleveille/discit"
+							imgSrc="/img/discit.webp"
+							action="Launch"
+						/>
+						<Project
+							name="discit-api"
+							description="RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL."
+							linkHref="https://discit-api.herokuapp.com/"
+							repoLinkHref="https://github.com/cdleveille/discit-api"
+							imgSrc="/img/discit-api.webp"
+							action="Launch"
+						/>
+						<Project
+							name="slime-volleyball"
+							description="A remake of the classic browser game. Python (desktop) & JavaScript (web) versions."
+							linkHref="/slime"
+							repoLinkHref="https://github.com/cdleveille/slime-volleyball"
+							imgSrc="/img/slime.webp"
+							action="Play"
+						/>
+						<Project
+							name="puttjs"
+							description="2D minigolf game concept written in JavaScript/HTML5 Canvas."
+							linkHref="/putt"
+							repoLinkHref="https://github.com/cdleveille/puttjs"
+							imgSrc="/img/putt.webp"
+							action="Play"
+						/>
+						<Project
+							name="pioholdem"
+							description="Heads-up no-limit Texas Holdem bot written in .NET C# - AI from multiple sources including PioSOLVER game
+										trees and Nash Equilibrium push/fold charts."
+							repoLinkHref="https://github.com/cdleveille/pioholdem"
+							imgSrc="/img/pioholdem.webp"
+						/>
 					</div>
 					<div id="about" className="section centered">
 						<h2 className="centered">About Me</h2>
