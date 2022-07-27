@@ -12,7 +12,7 @@ const Index: NextPage = () => {
 				<div className="container-inner">
 					<div id="header" className="section centered">
 						<h1>Chris Leveille</h1>
-						<div id="title" className="text-muted">
+						<div id="title" className="muted">
 							Software Engineer
 						</div>
 						<p>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</p>
@@ -127,7 +127,7 @@ const Index: NextPage = () => {
 						<p>In my free time I enjoy playing guitar, singing, skiing, disc golf, pool, table tennis, and video games.</p>
 					</div>
 					<div id="footer" className="section centered">
-						<p id="copyright" className="text-muted">
+						<p id="copyright" className="muted">
 							© {new Date().getFullYear()} Christopher D. Leveille
 						</p>
 					</div>
