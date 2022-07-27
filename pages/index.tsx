@@ -18,7 +18,9 @@ const Index: NextPage = () => {
 						<p>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</p>
 					</div>
 					<div id="pic" className="centered">
-						<img src="img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
+						<a href="img/cdleveille.webp">
+							<img src="img/cdleveille.webp" id="prof-pic" alt="Chris Leveille" width="460" height="460" />
+						</a>
 					</div>
 					<div id="links" className="section centered">
 						<ButtonLink href="mailto:cdleveille@gmail.com" label="Email" />
