@@ -7,7 +7,7 @@ const Pic: NextPage = () => {
 	return (
 		<>
 			<Head />
-			<ProfPic />
+			<ProfPic className="absolute-centered" />
 		</>
 	);
 };

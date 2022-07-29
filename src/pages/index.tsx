@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
@@ -29,9 +30,11 @@ const Index: NextPage = () => {
 						id="pic"
 						classes="centered"
 						content={
-							<a href="/pic">
-								<ProfPic id="prof-pic" />
-							</a>
+							<Link href="/pic">
+								<a>
+									<ProfPic id="prof-pic" />
+								</a>
+							</Link>
 						}
 					/>
 					<Section
@@ -40,7 +43,7 @@ const Index: NextPage = () => {
 						content={
 							<>
 								<ButtonLink href="mailto:cdleveille@gmail.com" label="Email" />
-								<ButtonLink href="/resume" label="Resume" />
+								<ButtonLink href="/resume" label="Resume" target="_self" />
 								<ButtonLink href="https://www.linkedin.com/in/cdleveille/" label="LinkedIn" />
 								<ButtonLink href="https://github.com/cdleveille" label="GitHub" />
 								<ButtonLink href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
