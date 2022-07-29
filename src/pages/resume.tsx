@@ -14,7 +14,7 @@ const Resume: NextPage = () => {
 	const handlePrint = useReactToPrint({
 		content: () => refToPrint.current,
 		pageStyle:
-			"@page{ margin: 1rem; margin-bottom: 0;  } * { color: black !important; } div > h1 { font-size: 1.5rem; } div > h2 { font-size: 1.2rem; }",
+			"@page{ margin: 1rem; margin-bottom: 0; size: portrait;  } * { color: black !important; } div > h1 { font-size: 1.5rem; } div > h2 { font-size: 1.2rem; }",
 		documentTitle: "christopher_leveille_resume.pdf"
 	});
 
