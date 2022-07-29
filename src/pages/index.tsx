@@ -44,7 +44,7 @@ const Index: NextPage = () => {
 							<>
 								<ButtonLink href="mailto:cdleveille@gmail.com" label="Email" />
 								<ButtonLink href="/resume" label="Resume" target="_self" />
-								<ButtonLink href="https://www.linkedin.com/in/cdleveille/" label="LinkedIn" />
+								<ButtonLink href="https://www.linkedin.com/in/cdleveille" label="LinkedIn" />
 								<ButtonLink href="https://github.com/cdleveille" label="GitHub" />
 								<ButtonLink href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
 							</>

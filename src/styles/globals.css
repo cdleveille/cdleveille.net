@@ -60,6 +60,55 @@ img {
 	padding-bottom: 0.8rem;
 }
 
+#resume-page {
+	background-color: white;
+	width: 60%;
+	min-width: 500px;
+	height: 100%;
+	margin: auto;
+	margin-top: 4rem;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+#resume-page-inner {
+	width: 95%;
+	margin: auto;
+}
+
+#resume-page-inner > div > a {
+	color: black;
+}
+
+#resume-page-inner > div > a:hover {
+	text-decoration: underline;
+}
+
+#resume-page-inner > h1 {
+	font-size: 2rem;
+}
+
+#resume-page-inner > h2 {
+	font-size: 1.5rem;
+}
+
+#resume-page-inner > ul {
+	padding-left: 1.2rem;
+}
+
+#resume-page-inner > ul > li {
+	padding-left: 1rem;
+}
+
+.resume-indent-1 {
+	margin-left: 2rem !important;
+}
+
+.resume-indent-2 {
+	margin-left: 4rem !important;
+}
+
 .container-outer {
 	display: flex;
 	background-color: #0d1117;
