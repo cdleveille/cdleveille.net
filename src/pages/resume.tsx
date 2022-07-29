@@ -24,7 +24,7 @@ const Resume: NextPage = () => {
 			<NextHead>
 				<title>Chris Leveille - Resume</title>
 			</NextHead>
-			<div style={{ margin: "2rem", textAlign: "center" }}>
+			<div style={{ marginTop: "2rem", marginBottom: "1.5rem", textAlign: "center" }}>
 				<ButtonLink href={Url.HOME} label="Home" target="_self" />
 				<ButtonLink
 					label="Print"
