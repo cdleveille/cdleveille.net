@@ -64,6 +64,7 @@ img {
 	display: flex;
 	background-color: #0d1117;
 	margin: auto;
+	max-width: 1400px;
 }
 
 .container-inner {

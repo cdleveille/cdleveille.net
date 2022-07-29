@@ -123,10 +123,18 @@ const Index: NextPage = () => {
 								<Project
 									name="discit-api"
 									description="RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL."
-									linkHref="https://discit-api.herokuapp.com/"
+									linkHref="https://discitapi.herokuapp.com/"
 									repoLinkHref="https://github.com/cdleveille/discit-api"
 									imgSrc="/img/discit-api.webp"
 									action="Launch"
+								/>
+								<Project
+									name="gamepad-helper"
+									description="Lightweight wrapper class for the HTML5 Gamepad API. Written in TypeScript. Check it out on the npm registry!"
+									linkHref="https://www.npmjs.com/package/gamepad-helper"
+									repoLinkHref="https://github.com/cdleveille/gamepad-helper"
+									imgSrc="/img/gamepad-helper.webp"
+									action="npm"
 								/>
 								<Project
 									name="slime-volleyball"
