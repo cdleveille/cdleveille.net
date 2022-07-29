@@ -64,40 +64,42 @@ img {
 	background-color: white;
 	width: 60%;
 	min-width: 500px;
+	max-width: 1500px;
 	height: 100%;
 	margin: auto;
-	margin-top: 4rem;
+	margin-bottom: 2rem;
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
+	user-select: none;
 }
 
 #resume-page-inner {
-	width: 95%;
+	width: 96%;
 	margin: auto;
 }
 
-#resume-page-inner > div > a {
+#resume-page-inner a {
 	color: black;
 }
 
-#resume-page-inner > div > a:hover {
+#resume-page-inner a:hover {
 	text-decoration: underline;
 }
 
-#resume-page-inner > h1 {
-	font-size: 2rem;
+#resume-page-inner h1 {
+	font-size: 1.75rem;
 }
 
-#resume-page-inner > h2 {
-	font-size: 1.5rem;
+#resume-page-inner h2 {
+	font-size: 1.25rem;
 }
 
-#resume-page-inner > ul {
+#resume-page-inner ul {
 	padding-left: 1.2rem;
 }
 
-#resume-page-inner > ul > li {
+#resume-page-inner li {
 	padding-left: 1rem;
 }
 
@@ -211,6 +213,7 @@ img {
 		width: 70%;
 	}
 }
+
 @media (max-width: 400px) {
 	.project-img {
 		min-width: 200px;
@@ -220,5 +223,17 @@ img {
 @media (min-width: 401px) {
 	.project-img {
 		min-width: 390px;
+	}
+}
+
+@media (max-width: 1200px) {
+	#resume-page {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1201px) {
+	#resume-page {
+		width: 70%;
 	}
 }

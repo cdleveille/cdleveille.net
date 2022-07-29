@@ -6,6 +6,7 @@ import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
 import Project from "../components/Project";
 import Section from "../components/Section";
+import { Action, Img, Url } from "../types/contants";
 
 const Index: NextPage = () => {
 	return (
@@ -42,11 +43,11 @@ const Index: NextPage = () => {
 						classes="centered"
 						content={
 							<>
-								<ButtonLink href="mailto:cdleveille@gmail.com" label="Email" />
-								<ButtonLink href="/resume" label="Resume" target="_self" />
-								<ButtonLink href="https://www.linkedin.com/in/cdleveille" label="LinkedIn" />
-								<ButtonLink href="https://github.com/cdleveille" label="GitHub" />
-								<ButtonLink href="https://trailblazer.me/id/cdleveille" label="Trailblazer" />
+								<ButtonLink href={Url.MAILTO} label="Email" />
+								<ButtonLink href={Url.RESUME} label="Resume" target="_self" />
+								<ButtonLink href={Url.LINKEDIN} label="LinkedIn" />
+								<ButtonLink href={Url.GITHUB} label="GitHub" />
+								<ButtonLink href={Url.TRAILBLAZER} label="Trailblazer" />
 							</>
 						}
 					/>
@@ -57,22 +58,22 @@ const Index: NextPage = () => {
 								<h2 className="centered">Experience</h2>
 								<p>
 									I currently work full-time for&nbsp;
-									<a href="https://www.windsorsolutions.com/" target="_blank" rel="noreferrer">
+									<a href={Url.WINDSOR} target="_blank" rel="noreferrer">
 										Windsor Solutions
 									</a>
 									&nbsp;of Northampton, MA.
 								</p>
 								<p>
 									In early 2022 I finished working as a contractor at&nbsp;
-									<a href="https://www.financialpartners.com/" target="_blank" rel="noreferrer">
+									<a href={Url.FPI} target="_blank" rel="noreferrer">
 										Farm Credit Financial Partners
 									</a>
 									, where I previously held a full-time position as well. Prior to that I worked for&nbsp;
-									<a href="https://gdmissionsystems.com/" target="_blank" rel="noreferrer">
+									<a href={Url.GD} target="_blank" rel="noreferrer">
 										General Dynamics Mission Systems
 									</a>
 									, and before that attended&nbsp;
-									<a href="https://www.union.edu/" target="_blank" rel="noreferrer">
+									<a href={Url.UNION} target="_blank" rel="noreferrer">
 										Union College
 									</a>
 									&nbsp;where I earned a B.S. in Computer Science.
@@ -81,11 +82,7 @@ const Index: NextPage = () => {
 									I have professional programming experience primarily in SQL, C#, Java, and JavaScript, and have dedicated
 									significant time to learning Node.js, TypeScript, and React among other technologies outside of work. I am also
 									professionally&nbsp;
-									<a
-										href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=lI01VISrcHRWF+rA/h9A4dipkjUutddgtd6X9RIuOTJs72Y6ykIDVowxSOLeWYVa"
-										target="_blank"
-										rel="noreferrer"
-									>
+									<a href={Url.SF_CERT} target="_blank" rel="noreferrer">
 										certified
 									</a>
 									&nbsp;as a developer in the Salesforce Platform.
@@ -102,65 +99,65 @@ const Index: NextPage = () => {
 								<Project
 									name="skifreejs"
 									description="A remake of the classic PC game from Windows Entertainment Pack 3. Written in JavaScript/HTML5 Canvas backed by Node.js."
-									linkHref="https://skifreejs.herokuapp.com"
-									repoLinkHref="https://github.com/cdleveille/skifreejs"
-									imgSrc="/img/ski.webp"
-									action="Play"
+									linkHref={Url.SKIFREEJS}
+									repoLinkHref={Url.SKIFREEJS_REPO}
+									imgSrc={Img.SKI}
+									action={Action.PLAY}
 								/>
 								<Project
 									name="copterjs"
 									description="Modern remake of the classic addicting flash game. Written in TypeScript/HTML5 Canvas backed by Node.js."
-									linkHref="https://copterjs.herokuapp.com"
-									repoLinkHref="https://github.com/cdleveille/copterjs"
-									imgSrc="/img/copter.webp"
-									action="Play"
+									linkHref={Url.COPTERJS}
+									repoLinkHref={Url.COPTERJS_REPO}
+									imgSrc={Img.COPTER}
+									action={Action.PLAY}
 								/>
 								<Project
 									name="discit"
 									description="A responsive disc golf disc search engine. Built with Next.js and TypeScript."
-									linkHref="https://discit.vercel.app"
-									repoLinkHref="https://github.com/cdleveille/discit"
-									imgSrc="/img/discit.webp"
-									action="Launch"
+									linkHref={Url.DISCIT}
+									repoLinkHref={Url.DISCIT_REPO}
+									imgSrc={Img.DISCIT}
+									action={Action.LAUNCH}
 								/>
 								<Project
 									name="discit-api"
 									description="RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL."
-									linkHref="https://discitapi.herokuapp.com/"
-									repoLinkHref="https://github.com/cdleveille/discit-api"
-									imgSrc="/img/discit-api.webp"
-									action="Launch"
+									linkHref={Url.DISCIT_API}
+									repoLinkHref={Url.DISCIT_API_REPO}
+									imgSrc={Img.DISCIT_API}
+									action={Action.LAUNCH}
 								/>
 								<Project
 									name="gamepad-helper"
 									description="Lightweight wrapper class for the HTML5 Gamepad API. Written in TypeScript. Check it out on the npm registry!"
-									linkHref="https://www.npmjs.com/package/gamepad-helper"
-									repoLinkHref="https://github.com/cdleveille/gamepad-helper"
-									imgSrc="/img/gamepad-helper.webp"
-									action="npm"
+									linkHref={Url.GAMEPAD_HELPER}
+									repoLinkHref={Url.GAMEPAD_HELPER_REPO}
+									imgSrc={Img.GAMEPAD_HELPER}
+									action={Action.NPM}
 								/>
 								<Project
 									name="slime-volleyball"
 									description="A remake of the classic browser game. Python (desktop) & JavaScript (web) versions."
-									linkHref="/slime"
-									repoLinkHref="https://github.com/cdleveille/slime-volleyball"
-									imgSrc="/img/slime.webp"
-									action="Play"
+									linkHref={Url.SLIME}
+									repoLinkHref={Url.SLIME_REPO}
+									imgSrc={Img.SLIME}
+									action={Action.PLAY}
 								/>
 								<Project
 									name="puttjs"
 									description="2D minigolf game concept written in JavaScript/HTML5 Canvas."
-									linkHref="/putt"
-									repoLinkHref="https://github.com/cdleveille/puttjs"
-									imgSrc="/img/putt.webp"
-									action="Play"
+									linkHref={Url.PUTT}
+									repoLinkHref={Url.PUTT_REPO}
+									imgSrc={Img.PUTT}
+									action={Action.PLAY}
 								/>
 								<Project
 									name="pioholdem"
 									description="Heads-up no-limit Texas Holdem bot written in .NET C# - AI from multiple sources including PioSOLVER game
 										trees and Nash Equilibrium push/fold charts."
-									repoLinkHref="https://github.com/cdleveille/pioholdem"
-									imgSrc="/img/pioholdem.webp"
+									repoLinkHref={Url.PIOHOLDEM_REPO}
+									imgSrc={Img.PIOHOLDEM}
 								/>
 							</>
 						}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { Action } from "../types/contants";
 import ButtonLink from "./ButtonLink";
 
 interface IProjectProps {
@@ -20,7 +21,7 @@ const Project: React.FC<IProjectProps> = ({ name, description, linkHref, repoLin
 					<p>{description}</p>
 					<div>
 						{linkHref && action && <ButtonLink href={linkHref} label={action} />}
-						<ButtonLink href={repoLinkHref} label="Repo" />
+						<ButtonLink href={repoLinkHref} label={Action.REPO} />
 					</div>
 				</div>
 			</div>
