@@ -199,6 +199,18 @@ img {
 	color: #888888;
 }
 
+.main-btn {
+	width: 4.2rem;
+	height: 3.2rem;
+	margin-bottom: 1rem;
+}
+
+#main-btn-layout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 @media (max-width: 1000px) {
 	body {
 		font-size: 14px;

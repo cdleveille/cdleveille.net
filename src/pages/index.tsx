@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 
+import Tooltip from "@mui/material/Tooltip";
+import Zoom from "@mui/material/Zoom";
+
 import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
@@ -42,13 +45,38 @@ const Index: NextPage = () => {
 						id="links"
 						classes="centered"
 						content={
-							<>
-								<ButtonLink href={Url.MAILTO} label="Email" />
-								<ButtonLink href={Url.RESUME} label="Resume" target="_self" />
-								<ButtonLink href={Url.LINKEDIN} label="LinkedIn" />
-								<ButtonLink href={Url.GITHUB} label="GitHub" />
-								<ButtonLink href={Url.TRAILBLAZER} label="Trailblazer" />
-							</>
+							<div id="main-btn-layout">
+								<Tooltip title="Email" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
+									<div>
+										<ButtonLink className="main-btn" href={Url.MAILTO} label={<img src={Img.GMAIL} width="32" />} />
+									</div>
+								</Tooltip>
+								<Tooltip title="Resume" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
+									<div>
+										<ButtonLink
+											className="main-btn"
+											href={Url.RESUME}
+											label={<img style={{ marginLeft: "5px" }} src={Img.RESUME} width="32" />}
+											target="_self"
+										/>
+									</div>
+								</Tooltip>
+								<Tooltip title="LinkedIn" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
+									<div>
+										<ButtonLink className="main-btn" href={Url.LINKEDIN} label={<img src={Img.LINKEDIN} width="32" />} />
+									</div>
+								</Tooltip>
+								<Tooltip title="GitHub" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
+									<div>
+										<ButtonLink className="main-btn" href={Url.GITHUB} label={<img src={Img.GITHUB} width="32" />} />
+									</div>
+								</Tooltip>
+								<Tooltip title="Trailblazer" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
+									<div>
+										<ButtonLink className="main-btn" href={Url.TRAILBLAZER} label={<img src={Img.SALESFORCE} width="40" />} />
+									</div>
+								</Tooltip>
+							</div>
 						}
 					/>
 					<Section

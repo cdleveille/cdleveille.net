@@ -38,7 +38,12 @@ export enum Img {
 	GAMEPAD_HELPER = "/img/gamepad-helper.webp",
 	SLIME = "/img/slime.webp",
 	PUTT = "/img/putt.webp",
-	PIOHOLDEM = "/img/pioholdem.webp"
+	PIOHOLDEM = "/img/pioholdem.webp",
+	GMAIL = "/img/svg/gmail.svg",
+	RESUME = "/img/svg/resume.svg",
+	LINKEDIN = "img/svg/linkedin.svg",
+	GITHUB = "/img/svg/github.svg",
+	SALESFORCE = "/img/svg/salesforce.svg"
 }
 
 export enum Action {
