@@ -1,5 +1,3 @@
-import ButtonLink from "./ButtonLink";
-
 interface IProjectProps {
 	name: string;
 	description: string;
@@ -17,8 +15,28 @@ const Project: React.FC<IProjectProps> = ({ name, description, linkHref, repoLin
 					<h3>{name}</h3>
 					<p>{description}</p>
 					<div>
-						{linkHref && action && <ButtonLink href={linkHref} label={action} />}
-						<ButtonLink href={repoLinkHref} label="Repo" />
+						{linkHref && action && (
+							<a
+								type="button"
+								className="btn btn-dark"
+								href={linkHref}
+								target="_blank"
+								rel="noreferrer"
+								onClick={(e) => e.currentTarget.blur()}
+							>
+								{action}
+							</a>
+						)}
+						<a
+							type="button"
+							className="btn btn-dark"
+							href={repoLinkHref}
+							target="_blank"
+							rel="noreferrer"
+							onClick={(e) => e.currentTarget.blur()}
+						>
+							Repo
+						</a>
 					</div>
 				</div>
 			</div>
