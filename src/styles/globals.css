@@ -162,6 +162,7 @@ img {
 }
 
 .btn {
+	-webkit-appearance: none !important;
 	background-color: #212529;
 	border: 3px solid #0a0a0a;
 	font-size: 1.1rem;
