@@ -13,7 +13,7 @@ const ButtonLink: React.FC<IButtonLinkProps> = ({ href, className, label, target
 		<Link href={href || "/resume/print"}>
 			<a
 				type="button"
-				className={`btn btn-dark ${className}`}
+				className={`btn ${className}`}
 				target={target || "_blank"}
 				rel="noreferrer"
 				onClick={(e) => {

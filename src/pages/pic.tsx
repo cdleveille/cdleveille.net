@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
-import { Url } from "../types/contants";
+import { Url } from "../types/constants";
 
 const Pic: NextPage = () => {
 	return (

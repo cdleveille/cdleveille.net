@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RefObject } from "react";
 
-import { Url } from "../../types/contants";
+import { Url } from "../../types/constants";
 import Divider from "./Divider";
 import Experience from "./Experience";
 

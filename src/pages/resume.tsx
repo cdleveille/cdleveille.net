@@ -6,7 +6,7 @@ import { useReactToPrint } from "react-to-print";
 import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
 import ResumeContent from "../components/resume/ResumeContent";
-import { Url } from "../types/contants";
+import { Url } from "../types/constants";
 
 const Resume: NextPage = () => {
 	const refToPrint = useRef<HTMLDivElement>(null);

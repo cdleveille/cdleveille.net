@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Action } from "../types/contants";
+import { Action } from "../types/constants";
 import ButtonLink from "./ButtonLink";
 
 interface IProjectProps {

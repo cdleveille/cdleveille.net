@@ -1,4 +1,4 @@
-import { Img } from "../types/contants";
+import { Img } from "../types/constants";
 
 interface IProfPicProps {
 	id?: string;

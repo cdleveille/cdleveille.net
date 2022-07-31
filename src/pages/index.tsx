@@ -9,7 +9,7 @@ import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
 import Project from "../components/Project";
 import Section from "../components/Section";
-import { Action, Img, Url } from "../types/contants";
+import { Action, Img, Url } from "../types/constants";
 
 const Index: NextPage = () => {
 	return (
@@ -56,7 +56,7 @@ const Index: NextPage = () => {
 										<ButtonLink
 											className="main-btn"
 											href={Url.RESUME}
-											label={<img style={{ marginLeft: "5px" }} src={Img.RESUME} width="32" />}
+											label={<img style={{ marginLeft: "3px" }} src={Img.RESUME} width="32" />}
 											target="_self"
 										/>
 									</div>
