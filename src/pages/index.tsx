@@ -19,7 +19,7 @@ const Index: NextPage = () => {
 				<div className="container-inner">
 					<Section
 						id="header"
-						classes="centered"
+						className="centered"
 						content={
 							<>
 								<h1>Chris Leveille</h1>
@@ -32,7 +32,7 @@ const Index: NextPage = () => {
 					/>
 					<Section
 						id="pic"
-						classes="centered"
+						className="centered"
 						content={
 							<Link href="/pic">
 								<a>
@@ -43,7 +43,7 @@ const Index: NextPage = () => {
 					/>
 					<Section
 						id="links"
-						classes="centered"
+						className="centered"
 						content={
 							<div id="main-btn-layout">
 								<Tooltip title="Email" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
@@ -120,7 +120,7 @@ const Index: NextPage = () => {
 					/>
 					<Section
 						id="projects"
-						classes="centered"
+						className="centered"
 						content={
 							<>
 								<h2>Projects</h2>
@@ -192,7 +192,7 @@ const Index: NextPage = () => {
 					/>
 					<Section
 						id="about"
-						classes="centered"
+						className="centered"
 						content={
 							<>
 								<h2>About Me</h2>
@@ -200,7 +200,7 @@ const Index: NextPage = () => {
 							</>
 						}
 					/>
-					<Section id="footer" classes="centered muted" content={<p>© {new Date().getFullYear()} Christopher D. Leveille</p>} />
+					<Section id="footer" className="centered muted" content={<p>© {new Date().getFullYear()} Christopher D. Leveille</p>} />
 				</div>
 			</div>
 		</>

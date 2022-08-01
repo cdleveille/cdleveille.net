@@ -1,6 +1,10 @@
 import NextHead from "next/head";
 
-const Head: React.FC = () => {
+interface IHeadProps {
+	title?: string;
+}
+
+const Head: React.FC<IHeadProps> = ({ title }) => {
 	return (
 		<NextHead>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +14,7 @@ const Head: React.FC = () => {
 			<link rel="icon" type="image/png" sizes="32x32" href="img/icons/icon-32x32.png" />
 			<link rel="icon" type="image/png" sizes="16x16" href="img/icons/icon-16x16.png" />
 			<link rel="manifest" href="manifest.json" />
-			<title>Chris Leveille - Software Engineer</title>
+			<title>{title || "Chris Leveille - Software Engineer"}</title>
 		</NextHead>
 	);
 };

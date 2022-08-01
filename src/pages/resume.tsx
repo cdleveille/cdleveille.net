@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import NextHead from "next/head";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 
@@ -20,10 +19,7 @@ const Resume: NextPage = () => {
 
 	return (
 		<>
-			<Head />
-			<NextHead>
-				<title>Chris Leveille - Resume</title>
-			</NextHead>
+			<Head title="Chris Leveille - Resume" />
 			<div style={{ marginTop: "2rem", marginBottom: "1.5rem", textAlign: "center" }}>
 				<ButtonLink href={Url.HOME} label="Home" target="_self" />
 				<ButtonLink
