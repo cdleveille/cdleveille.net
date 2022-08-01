@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 import Tooltip from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
@@ -9,9 +10,20 @@ import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
 import Project from "../components/Project";
 import Section from "../components/Section";
+import { IResponse } from "../types/abstract";
 import { Action, Img, Url } from "../types/constants";
 
 const Index: NextPage = () => {
+	const [age, setAge] = useState<number | undefined>(undefined);
+
+	useEffect(() => {
+		(async () => {
+			const res = await fetch("/api/age");
+			const json = (await res.json()) as IResponse<number>;
+			setAge(json.data);
+		})();
+	}, []);
+
 	return (
 		<>
 			<Head />
@@ -115,6 +127,13 @@ const Index: NextPage = () => {
 									</a>
 									&nbsp;as a developer in the Salesforce Platform.
 								</p>
+								<p>
+									For more information, feel free to check out my{" "}
+									<a href={Url.RESUME} rel="noreferrer">
+										resume
+									</a>
+									.
+								</p>
 							</>
 						}
 					/>
@@ -196,7 +215,10 @@ const Index: NextPage = () => {
 						content={
 							<>
 								<h2>About Me</h2>
-								<p>In my free time I enjoy playing guitar, singing, skiing, disc golf, pool, table tennis, and video games.</p>
+								<p>
+									{age ? `I am ${age} years old, and in` : "In"} my free time I enjoy playing guitar, singing, skiing, disc golf,
+									pool, table tennis, and video games.
+								</p>
 							</>
 						}
 					/>
