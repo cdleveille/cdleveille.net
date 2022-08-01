@@ -107,7 +107,7 @@ const ResumeContent: React.FC<IResumeContentProps> = ({ refToPrint }) => {
 				June 2014
 			</p>
 			<p className="resume-indent-1">
-				<strong>Relevant Coursework: </strong>
+				<strong>Relevant Coursework:&nbsp;&nbsp;</strong>
 				Game Development &#40;Intro to CS&#41;, Data Structures, Discrete Math for Computer Science, Algorithm Design &amp; Analysis,
 				Large-Scale Software Development, Intro to Parallel Computing, User Interfaces, Web Programming, Programming Languages, Computer
 				Organization, Intro to Robotics, Artificial Intelligence
