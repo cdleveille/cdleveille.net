@@ -12,10 +12,11 @@ interface IExperienceItemProps {
 const ExperienceItem: React.FC<IExperienceItemProps> = ({ company, location, roles }) => {
 	return (
 		<>
-			<span className="resume-indent-1">{company}</span>
-			<Divider />
-			{location}
-			<br />
+			<div className="resume-indent-1">
+				{company}
+				<Divider />
+				{location}
+			</div>
 			{roles.map((role, i) => {
 				return <Role key={i} title={role.title} dateRange={role.dateRange} description={role.description} />;
 			})}

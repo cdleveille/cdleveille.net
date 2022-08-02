@@ -9,11 +9,11 @@ export interface IRoleProps {
 const Role: React.FC<IRoleProps> = ({ title, dateRange, description }) => {
 	return (
 		<>
-			<span className="resume-indent-2">
+			<div className="resume-indent-2">
 				<em>{title}</em>
 				<Divider />
 				<em>{dateRange}</em>
-			</span>
+			</div>
 			<ul className="resume-indent-2">
 				{description.map((item, i) => {
 					return <li key={i}>{item}</li>;

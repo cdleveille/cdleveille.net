@@ -15,7 +15,8 @@ const Resume: NextPage = () => {
 	const handlePrint = useReactToPrint({
 		content: () => refToPrint.current,
 		pageStyle:
-			"@page{ margin: 1rem; margin-bottom: 0; size: portrait;  } * { color: black !important; } div h1 { font-size: 1.3rem; } div h2 { font-size: 1.1rem; }",
+			"@page{ margin: 1rem; margin-bottom: 0; size: portrait; } * { color: black !important; font-family: Arial, Helvetica, sans-serif; }" +
+			"div h1 { font-size: 1.3rem; } div h2 { font-size: 1.1rem; } div p { margin: 0.5rem; }",
 		documentTitle: "christopher_leveille_resume.pdf"
 	});
 
@@ -109,11 +110,7 @@ const Resume: NextPage = () => {
 								{
 									title: "Software Engineer",
 									dateRange: "December 2014 - March 2017",
-									description: [
-										"Developed software modules for a dynamic military network management application.",
-										"Worked tasks through requirements, design, implementation, testing, and maintenance phases of the development process.",
-										"Presented regular progress reports and feature demonstrations to team members and relevant subject matter experts."
-									]
+									description: ["Developed software modules for a dynamic military network management application."]
 								}
 							]}
 						/>
