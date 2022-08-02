@@ -2,14 +2,12 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import Tooltip from "@mui/material/Tooltip";
-import Zoom from "@mui/material/Zoom";
-
 import ButtonLink from "../components/ButtonLink";
 import Head from "../components/Head";
 import ProfPic from "../components/ProfPic";
 import Project from "../components/Project";
 import Section from "../components/Section";
+import Tooltip from "../components/Tooltip";
 import { IResponse } from "../types/abstract";
 import { Action, Img, Url } from "../types/constants";
 
@@ -58,52 +56,67 @@ const Index: NextPage = () => {
 						className="centered"
 						content={
 							<div id="main-btn-layout">
-								<Tooltip title="Email" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
-									<div>
-										<ButtonLink
-											className="main-btn"
-											href={Url.MAILTO}
-											label={<img src={Img.GMAIL} alt="Email" width="32" height="32" />}
-										/>
-									</div>
-								</Tooltip>
-								<Tooltip title="Resume" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
-									<div>
-										<ButtonLink
-											className="main-btn"
-											href={Url.RESUME}
-											label={<img style={{ marginLeft: "3px" }} src={Img.RESUME} alt="Resume" width="32" height="32" />}
-											target="_self"
-										/>
-									</div>
-								</Tooltip>
-								<Tooltip title="LinkedIn" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
-									<div>
-										<ButtonLink
-											className="main-btn"
-											href={Url.LINKEDIN}
-											label={<img src={Img.LINKEDIN} alt="LinkedIn" width="32" height="32" />}
-										/>
-									</div>
-								</Tooltip>
-								<Tooltip title="GitHub" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
-									<div>
-										<ButtonLink
-											className="main-btn"
-											href={Url.GITHUB}
-											label={<img src={Img.GITHUB} alt="GitHub" width="32" height="32" />}
-										/>
-									</div>
-								</Tooltip>
-								<Tooltip title="Trailblazer" placement="top" arrow={true} disableInteractive TransitionComponent={Zoom}>
-									<div>
-										<ButtonLink
-											className="main-btn"
-											href={Url.TRAILBLAZER}
-											label={<img src={Img.SALESFORCE} alt="Trailblazer" width="32" height="32" />}
-										/>
-									</div>
-								</Tooltip>
+								<div className="main-btn-container">
+									<Tooltip
+										title="Email"
+										child={
+											<ButtonLink
+												className="main-btn"
+												href={Url.MAILTO}
+												label={<img src={Img.GMAIL} alt="Email" width="32" height="32" />}
+											/>
+										}
+									/>
+								</div>
+								<div className="main-btn-container">
+									<Tooltip
+										title="Resume"
+										child={
+											<ButtonLink
+												className="main-btn"
+												href={Url.RESUME}
+												label={<img style={{ marginLeft: "3px" }} src={Img.RESUME} alt="Resume" width="32" height="32" />}
+												target="_self"
+											/>
+										}
+									/>
+								</div>
+								<div className="main-btn-container">
+									<Tooltip
+										title="LinkedIn"
+										child={
+											<ButtonLink
+												className="main-btn"
+												href={Url.LINKEDIN}
+												label={<img src={Img.LINKEDIN} alt="LinkedIn" width="32" height="32" />}
+											/>
+										}
+									/>
+								</div>
+								<div className="main-btn-container">
+									<Tooltip
+										title="GitHub"
+										child={
+											<ButtonLink
+												className="main-btn"
+												href={Url.GITHUB}
+												label={<img src={Img.GITHUB} alt="GitHub" width="32" height="32" />}
+											/>
+										}
+									/>
+								</div>
+								<div className="main-btn-container">
+									<Tooltip
+										title="Trailblazer"
+										child={
+											<ButtonLink
+												className="main-btn"
+												href={Url.TRAILBLAZER}
+												label={<img src={Img.SALESFORCE} alt="Trailblazer" width="32" height="32" />}
+											/>
+										}
+									/>
+								</div>
 							</div>
 						}
 					/>

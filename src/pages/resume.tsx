@@ -61,7 +61,11 @@ const Resume: NextPage = () => {
 							<strong>Experience</strong>
 						</h2>
 						<Experience
-							company="Windsor Solutions"
+							company={
+								<Link href={Url.WINDSOR}>
+									<a target="_blank">Windsor Solutions</a>
+								</Link>
+							}
 							location="Northampton, MA"
 							roles={[
 								{
@@ -72,7 +76,11 @@ const Resume: NextPage = () => {
 							]}
 						/>
 						<Experience
-							company="Farm Credit Financial Partners, Inc."
+							company={
+								<Link href={Url.FPI}>
+									<a target="_blank">Farm Credit Financial Partners, Inc.</a>
+								</Link>
+							}
 							location="Springfield, MA"
 							roles={[
 								{
@@ -91,7 +99,11 @@ const Resume: NextPage = () => {
 							]}
 						/>
 						<Experience
-							company="General Dynamics Mission Systems"
+							company={
+								<Link href={Url.FPI}>
+									<a target="_blank">General Dynamics Missions Systems</a>
+								</Link>
+							}
 							location="Taunton, MA"
 							roles={[
 								{
@@ -106,7 +118,11 @@ const Resume: NextPage = () => {
 							]}
 						/>
 						<Experience
-							company="Leantu LLC"
+							company={
+								<Link href={Url.LEANTU}>
+									<a target="_blank">Leantu LLC</a>
+								</Link>
+							}
 							location="Hadley, MA"
 							roles={[
 								{
@@ -122,7 +138,9 @@ const Resume: NextPage = () => {
 							<strong>Education</strong>
 						</h2>
 						<p className="resume-indent-1">
-							Union College
+							<Link href={Url.UNION}>
+								<a target="_blank">Union College</a>
+							</Link>
 							<Divider />
 							Schenectady, NY
 							<br />

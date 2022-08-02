@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 import Divider from "./Divider";
 import Role, { IRoleProps } from "./Role";
 
 interface IExperienceItemProps {
-	company: string;
-	location: string;
+	company: string | ReactNode;
+	location: string | ReactNode;
 	roles: IRoleProps[];
 }
 

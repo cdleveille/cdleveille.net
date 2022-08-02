@@ -11,6 +11,7 @@ export enum Url {
 	WINDSOR = "https://www.windsorsolutions.com/",
 	FPI = "https://www.financialpartners.com/",
 	GD = "https://gdmissionsystems.com/",
+	LEANTU = "https://www.linkedin.com/company/leantu/",
 	UNION = "https://www.union.edu/",
 	SKIFREEJS = "https://skifreejs.herokuapp.com",
 	SKIFREEJS_REPO = "https://github.com/cdleveille/skifreejs",

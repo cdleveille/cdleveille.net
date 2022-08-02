@@ -12,7 +12,7 @@ const Pic: NextPage = () => {
 				<ButtonLink href={Url.HOME} label="Home" target="_self" />
 			</div>
 			<div style={{ textAlign: "center" }}>
-				<ProfPic />
+				<ProfPic id="prof-pic-page" />
 			</div>
 		</>
 	);
