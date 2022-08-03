@@ -70,7 +70,6 @@ img {
 	border: 3px solid #0a0a0a;
 	background-color: white;
 	width: 60%;
-	/* min-width: 500px; */
 	max-width: 1500px;
 	height: 100%;
 	margin: auto;
@@ -122,6 +121,10 @@ img {
 	background-color: #0d1117;
 	margin: auto;
 	max-width: 1400px;
+}
+
+.full-height {
+	height: 100vh;
 }
 
 .container-inner {
