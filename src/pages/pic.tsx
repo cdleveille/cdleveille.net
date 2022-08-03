@@ -10,7 +10,7 @@ const Pic: NextPage = () => {
 			<Head />
 			<div className="container-outer full-height">
 				<div className="container-inner">
-					<div style={{ margin: "2rem", textAlign: "center" }}>
+					<div style={{ margin: "1.5rem", textAlign: "center" }}>
 						<ButtonLink href={Url.HOME} label="Home" target="_self" />
 					</div>
 					<div style={{ textAlign: "center" }}>

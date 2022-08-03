@@ -6,10 +6,19 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	background-color: #171b22;
 	color: #c9d1d9;
-	font-size: 1rem;
+	font-size: 1.05rem;
+}
+
+h1 {
+	font-size: 2.75rem;
+}
+
+h2 {
+	font-size: 2.25rem;
 }
 
 a {
@@ -35,11 +44,6 @@ a:hover {
 img {
 	max-width: 100%;
 	height: auto;
-}
-
-#pic {
-	padding-top: 30px;
-	padding-bottom: 10px;
 }
 
 #prof-pic {
@@ -116,6 +120,10 @@ img {
 	margin-left: 4rem !important;
 }
 
+.full-height {
+	height: 100vh;
+}
+
 .container-outer {
 	display: flex;
 	background-color: #0d1117;
@@ -123,15 +131,11 @@ img {
 	max-width: 1400px;
 }
 
-.full-height {
-	height: 100vh;
-}
-
 .container-inner {
 	background-color: #0d1117;
 	width: 90%;
-	margin: auto;
-	padding-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .row {
@@ -158,7 +162,12 @@ img {
 }
 
 .section {
-	padding-top: 3rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.spacer {
+	padding-top: 1.5rem;
 }
 
 .absolute-centered {
@@ -174,9 +183,7 @@ img {
 	border: 3px solid #0a0a0a;
 	font-size: 1.1rem;
 	transition: 0.3s;
-	margin-bottom: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin: 0.5rem;
 	padding-left: 0.85rem;
 	padding-right: 0.85rem;
 	padding-top: 0.5rem;

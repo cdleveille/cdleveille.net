@@ -27,6 +27,7 @@ const Index: NextPage = () => {
 			<Head />
 			<div className="container-outer">
 				<div className="container-inner">
+					<div className="spacer"></div>
 					<Section
 						id="header"
 						className="centered"
@@ -36,7 +37,7 @@ const Index: NextPage = () => {
 								<div id="title" className="muted">
 									Software Engineer
 								</div>
-								<p>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</p>
+								<div>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</div>
 							</>
 						}
 					/>
@@ -156,7 +157,7 @@ const Index: NextPage = () => {
 									</a>
 									&nbsp;as a developer in the Salesforce Platform.
 								</p>
-								<p>
+								<p style={{ marginBottom: "0" }}>
 									For more information, feel free to check out my{" "}
 									<a href={Url.RESUME} rel="noreferrer">
 										resume
@@ -244,14 +245,15 @@ const Index: NextPage = () => {
 						content={
 							<>
 								<h2>About Me</h2>
-								<p>
+								<div>
 									{age ? `I am ${age} years old, and in` : "In"} my free time I enjoy playing guitar, singing, skiing, disc golf,
 									pool, table tennis, and video games.
-								</p>
+								</div>
 							</>
 						}
 					/>
-					<Section id="footer" className="centered muted" content={<p>© {new Date().getFullYear()} Christopher D. Leveille</p>} />
+					<Section id="footer" className="centered muted" content={<div>© {new Date().getFullYear()} Christopher D. Leveille</div>} />
+					<div className="spacer"></div>
 				</div>
 			</div>
 		</>
