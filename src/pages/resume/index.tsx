@@ -1,15 +1,19 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 
-import ButtonLink from "../components/ButtonLink";
-import Head from "../components/Head";
-import Divider from "../components/resume/Divider";
-import Experience from "../components/resume/Experience";
-import { Url } from "../types/constants";
+import ButtonLink from "../../components/ButtonLink";
+import Head from "../../components/Head";
+import Divider from "../../components/resume/Divider";
+import Experience from "../../components/resume/Experience";
+import { Url } from "../../types/constants";
 
-const Resume: NextPage = () => {
+interface IResumeProps {
+	doPrint?: boolean;
+}
+
+const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 	const refToPrint = useRef<HTMLDivElement>(null);
 
 	const handlePrint = useReactToPrint({
@@ -19,6 +23,10 @@ const Resume: NextPage = () => {
 			"div h1 { font-size: 1.3rem; } div h2 { font-size: 1.1rem; } div p { margin: 0.5rem; }",
 		documentTitle: "christopher_leveille_resume.pdf"
 	});
+
+	useEffect(() => {
+		if (doPrint) handlePrint();
+	}, []);
 
 	return (
 		<>
