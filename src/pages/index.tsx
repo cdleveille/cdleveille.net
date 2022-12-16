@@ -37,7 +37,9 @@ const Index: NextPage = () => {
 								<div id="title" className="muted">
 									Software Engineer
 								</div>
-								<div>Hello! My name is Chris and I am a software engineer from Western Massachusetts.</div>
+								<div>
+									Hello! My name is Chris and I am a software engineer from Western Massachusetts.
+								</div>
 							</>
 						}
 					/>
@@ -76,7 +78,15 @@ const Index: NextPage = () => {
 											<ButtonLink
 												className="main-btn"
 												href={Url.RESUME}
-												label={<img style={{ marginLeft: "3px" }} src={Img.RESUME} alt="Resume" width="32" height="32" />}
+												label={
+													<img
+														style={{ marginLeft: "3px" }}
+														src={Img.RESUME}
+														alt="Resume"
+														width="32"
+														height="32"
+													/>
+												}
 												target="_self"
 											/>
 										}
@@ -113,7 +123,14 @@ const Index: NextPage = () => {
 											<ButtonLink
 												className="main-btn"
 												href={Url.TRAILBLAZER}
-												label={<img src={Img.SALESFORCE} alt="Trailblazer" width="32" height="32" />}
+												label={
+													<img
+														src={Img.SALESFORCE}
+														alt="Trailblazer"
+														width="32"
+														height="32"
+													/>
+												}
 											/>
 										}
 									/>
@@ -138,7 +155,8 @@ const Index: NextPage = () => {
 									<a href={Url.FPI} target="_blank" rel="noreferrer">
 										Farm Credit Financial Partners
 									</a>
-									, where I previously held a full-time position as well. Prior to that I worked for&nbsp;
+									, where I previously held a full-time position as well. Prior to that I worked
+									for&nbsp;
 									<a href={Url.GD} target="_blank" rel="noreferrer">
 										General Dynamics Mission Systems
 									</a>
@@ -149,9 +167,9 @@ const Index: NextPage = () => {
 									&nbsp;where I earned a B.S. in Computer Science.
 								</p>
 								<p>
-									I have professional programming experience primarily in SQL, C#, Java, and JavaScript, and have dedicated
-									significant time to learning Node.js, TypeScript, and React among other technologies outside of work. I am also
-									professionally&nbsp;
+									I have professional programming experience primarily in SQL, C#, Java, and
+									JavaScript, and have dedicated significant time to learning Node.js, TypeScript, and
+									React among other technologies outside of work. I am also professionally&nbsp;
 									<a href={Url.SF_CERT} target="_blank" rel="noreferrer">
 										certified
 									</a>
@@ -245,13 +263,17 @@ const Index: NextPage = () => {
 							<>
 								<h2>About Me</h2>
 								<div>
-									{age ? `I am ${age} years old, and in` : "In"} my free time I enjoy playing guitar, singing, skiing, disc golf,
-									pool, table tennis, and video games.
+									{age ? `I am ${age} years old, and in` : "In"} my free time I enjoy playing guitar,
+									singing, skiing, disc golf, pool, table tennis, and video games.
 								</div>
 							</>
 						}
 					/>
-					<Section id="footer" className="centered muted" content={<div>© {new Date().getFullYear()} Christopher D. Leveille</div>} />
+					<Section
+						id="footer"
+						className="centered muted"
+						content={<div>© {new Date().getFullYear()} Christopher D. Leveille</div>}
+					/>
 					<div className="spacer"></div>
 				</div>
 			</div>

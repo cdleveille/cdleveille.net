@@ -27,7 +27,7 @@ const Project: React.FC<IProjectProps> = ({ name, description, linkHref, repoLin
 			</div>
 			<div className="column">
 				<Link href={linkHref || repoLinkHref}>
-					<a target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+					<a target="_blank" rel="noreferrer" onClick={e => e.currentTarget.blur()}>
 						<img src={imgSrc} className="card-img project-img" alt={name} width="390" height="248" />
 					</a>
 				</Link>

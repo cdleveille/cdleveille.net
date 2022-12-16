@@ -10,7 +10,15 @@ interface ITooltipProps {
 
 const Tooltip: React.FC<ITooltipProps> = ({ title, child }) => {
 	return (
-		<MuiTooltip title={title} placement="top" arrow={true} disableInteractive TransitionComponent={Zoom} enterDelay={0} leaveDelay={0}>
+		<MuiTooltip
+			title={title}
+			placement="top"
+			arrow={true}
+			disableInteractive
+			TransitionComponent={Zoom}
+			enterDelay={0}
+			leaveDelay={0}
+		>
 			<div>{child}</div>
 		</MuiTooltip>
 	);

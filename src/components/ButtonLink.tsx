@@ -16,7 +16,7 @@ const ButtonLink: React.FC<IButtonLinkProps> = ({ href, className, label, target
 				className={`btn ${className}`}
 				target={target || "_blank"}
 				rel="noreferrer"
-				onClick={(e) => {
+				onClick={e => {
 					e.currentTarget.blur();
 					onClick && onClick(e);
 				}}

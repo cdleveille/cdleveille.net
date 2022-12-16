@@ -80,7 +80,9 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 								{
 									title: "Software Engineer",
 									dateRange: "April 2022 - Present",
-									description: ["Develop and maintain an electronic forms solution used by state environmental agencies."]
+									description: [
+										"Develop and maintain an electronic forms solution used by state environmental agencies."
+									]
 								}
 							]}
 						/>
@@ -95,7 +97,9 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 								{
 									title: "Contract Software Engineer",
 									dateRange: "November 2021 - February 2022",
-									description: ["Processed farmer-borrower data for year end tax form distribution and reporting."]
+									description: [
+										"Processed farmer-borrower data for year end tax form distribution and reporting."
+									]
 								},
 								{
 									title: "Software Engineer II",
@@ -118,7 +122,9 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 								{
 									title: "Software Engineer",
 									dateRange: "December 2014 - March 2017",
-									description: ["Developed software modules for a dynamic military network management application."]
+									description: [
+										"Developed software modules for a dynamic military network management application."
+									]
 								}
 							]}
 						/>
@@ -156,9 +162,10 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 						</p>
 						<p className="resume-indent-1">
 							<strong>Relevant Coursework:&nbsp; </strong>
-							Game Development &#40;Intro to CS&#41;, Data Structures, Discrete Math for Computer Science, Algorithm Design &amp;
-							Analysis, Large-Scale Software Development, Intro to Parallel Computing, User Interfaces, Web Programming, Programming
-							Languages, Computer Organization, Intro to Robotics, Artificial Intelligence
+							Game Development &#40;Intro to CS&#41;, Data Structures, Discrete Math for Computer Science,
+							Algorithm Design &amp; Analysis, Large-Scale Software Development, Intro to Parallel
+							Computing, User Interfaces, Web Programming, Programming Languages, Computer Organization,
+							Intro to Robotics, Artificial Intelligence
 						</p>
 						<h2>
 							<strong>Technical Skills</strong>
@@ -169,9 +176,9 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 						</p>
 						<p className="resume-indent-1">
 							<strong>Software Proficiency:&nbsp; </strong>
-							Node.js, Express, React, Next.js, Git, MongoDB, PostgreSQL, Docker, Salesforce Platform, .NET Framework, SQL Server
-							Management Studio, Azure Data Studio, Microsoft Visual Studio, Eclipse, Ext JS, GitHub, Azure DevOps, Windows, MacOS,
-							Linux, Microsoft Office
+							Node.js, Express, React, Next.js, Git, MongoDB, PostgreSQL, Docker, Salesforce Platform,
+							.NET Framework, SQL Server Management Studio, Azure Data Studio, Microsoft Visual Studio,
+							Eclipse, Ext JS, GitHub, Azure DevOps, Windows, MacOS, Linux, Microsoft Office
 						</p>
 						<h2>
 							<strong>Certifications</strong>
