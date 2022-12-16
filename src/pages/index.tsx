@@ -175,7 +175,7 @@ const Index: NextPage = () => {
 								<h2>Projects</h2>
 								<Project
 									name="skifreejs"
-									description="A remake of the classic PC game from Windows Entertainment Pack 3. Written in JavaScript/HTML5 Canvas backed by Node.js."
+									description="Fan remake of the classic PC game from Windows Entertainment Pack 3."
 									linkHref={Url.SKIFREEJS}
 									repoLinkHref={Url.SKIFREEJS_REPO}
 									imgSrc={Img.SKI}
@@ -183,7 +183,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="copterjs"
-									description="Modern remake of the classic addicting flash game. Written in TypeScript/HTML5 Canvas backed by Node.js."
+									description="Modern remake of the classic addicting flash game."
 									linkHref={Url.COPTERJS}
 									repoLinkHref={Url.COPTERJS_REPO}
 									imgSrc={Img.COPTER}
@@ -191,7 +191,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="discit"
-									description="A responsive disc golf disc search engine. Built with Next.js and TypeScript."
+									description="A responsive disc golf disc search engine."
 									linkHref={Url.DISCIT}
 									repoLinkHref={Url.DISCIT_REPO}
 									imgSrc={Img.DISCIT}
@@ -199,7 +199,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="discit-api"
-									description="RESTful API for disc golf discs. Written in TypeScript, Node.js, Express, MikroORM and PostgreSQL."
+									description="RESTful API for disc golf discs."
 									linkHref={Url.DISCIT_API}
 									repoLinkHref={Url.DISCIT_API_REPO}
 									imgSrc={Img.DISCIT_API}
@@ -207,7 +207,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="gamepad-helper"
-									description="Lightweight wrapper class for the HTML5 Gamepad API. Written in TypeScript. Check it out on the npm registry!"
+									description="Lightweight wrapper class for the HTML5 Gamepad API. Check it out on the npm registry!"
 									linkHref={Url.GAMEPAD_HELPER}
 									repoLinkHref={Url.GAMEPAD_HELPER_REPO}
 									imgSrc={Img.GAMEPAD_HELPER}
@@ -215,7 +215,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="slime-volleyball"
-									description="A remake of the classic browser game. Python (desktop) & JavaScript (web) versions."
+									description="A remake of the classic browser game."
 									linkHref={Url.SLIME}
 									repoLinkHref={Url.SLIME_REPO}
 									imgSrc={Img.SLIME}
@@ -223,7 +223,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="puttjs"
-									description="2D minigolf game concept written in JavaScript/HTML5 Canvas."
+									description="2D minigolf game concept."
 									linkHref={Url.PUTT}
 									repoLinkHref={Url.PUTT_REPO}
 									imgSrc={Img.PUTT}
@@ -231,8 +231,7 @@ const Index: NextPage = () => {
 								/>
 								<Project
 									name="pioholdem"
-									description="Heads-up no-limit Texas Holdem bot written in .NET C# - AI from multiple sources including PioSOLVER game
-										trees and Nash Equilibrium push/fold charts."
+									description="Heads-up no-limit Texas Holdem bot. AI from multiple sources including PioSOLVER game trees and Nash Equilibrium push/fold charts."
 									repoLinkHref={Url.PIOHOLDEM_REPO}
 									imgSrc={Img.PIOHOLDEM}
 								/>
