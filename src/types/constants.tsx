@@ -19,7 +19,7 @@ export enum Url {
 	COPTERJS_REPO = "https://github.com/cdleveille/copterjs",
 	DISCIT = "https://discit.vercel.app",
 	DISCIT_REPO = "https://github.com/cdleveille/discit",
-	DISCIT_API = "https://discitapi.herokuapp.com",
+	DISCIT_API = "https://discit-api.fly.dev",
 	DISCIT_API_REPO = "https://github.com/cdleveille/discit-api",
 	GAMEPAD_HELPER = "https://www.npmjs.com/package/gamepad-helper",
 	GAMEPAD_HELPER_REPO = "https://github.com/cdleveille/gamepad-helper",
