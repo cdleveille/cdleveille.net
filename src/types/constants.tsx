@@ -27,7 +27,9 @@ export enum Url {
 	SLIME_REPO = "https://github.com/cdleveille/slime-volleyball",
 	PUTT = "/putt",
 	PUTT_REPO = "https://github.com/cdleveille/puttjs",
-	PIOHOLDEM_REPO = "https://github.com/cdleveille/pioholdem"
+	PIOHOLDEM_REPO = "https://github.com/cdleveille/pioholdem",
+	PHUE = "https://phue.vercel.app",
+	PHUE_REPO = "https://github.com/cdleveille/phue"
 }
 
 export enum Img {
@@ -40,6 +42,7 @@ export enum Img {
 	SLIME = "/img/slime.webp",
 	PUTT = "/img/putt.webp",
 	PIOHOLDEM = "/img/pioholdem.webp",
+	PHUE = "img/phue.webp",
 	GMAIL = "/img/svg/gmail.svg",
 	RESUME = "/img/svg/resume.svg",
 	LINKEDIN = "img/svg/linkedin.svg",

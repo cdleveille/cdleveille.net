@@ -224,6 +224,14 @@ const Index: NextPage = () => {
 									action={Action.LAUNCH}
 								/>
 								<Project
+									name="phue"
+									description="Control your Philips Hue smart lights from your PC."
+									linkHref={Url.PHUE}
+									repoLinkHref={Url.PHUE_REPO}
+									imgSrc={Img.PHUE}
+									action={Action.LAUNCH}
+								/>
+								<Project
 									name="gamepad-helper"
 									description="Lightweight wrapper class for the HTML5 Gamepad API. Check it out on the npm registry!"
 									linkHref={Url.GAMEPAD_HELPER}

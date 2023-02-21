@@ -113,7 +113,7 @@ const Resume: NextPage<IResumeProps> = ({ doPrint }) => {
 						/>
 						<Experience
 							company={
-								<Link href={Url.FPI}>
+								<Link href={Url.GD}>
 									<a target="_blank">General Dynamics Missions Systems</a>
 								</Link>
 							}
