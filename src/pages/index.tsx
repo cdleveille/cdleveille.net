@@ -224,6 +224,14 @@ const Index: NextPage = () => {
 									action={Action.LAUNCH}
 								/>
 								<Project
+									name="kickups"
+									description="How long can you keep it up?"
+									linkHref={Url.KICKUPS}
+									repoLinkHref={Url.KICKUPS_REPO}
+									imgSrc={Img.KICKUPS}
+									action={Action.PLAY}
+								/>
+								<Project
 									name="phue"
 									description="Control your Philips Hue smart lights from your PC."
 									linkHref={Url.PHUE}

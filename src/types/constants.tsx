@@ -29,11 +29,13 @@ export enum Url {
 	PUTT_REPO = "https://github.com/cdleveille/puttjs",
 	PIOHOLDEM_REPO = "https://github.com/cdleveille/pioholdem",
 	PHUE = "https://phue.vercel.app",
-	PHUE_REPO = "https://github.com/cdleveille/phue"
+	PHUE_REPO = "https://github.com/cdleveille/phue",
+	KICKUPS = "https://kickups.fly.dev",
+	KICKUPS_REPO = "https://github.com/cdleveille/kickups"
 }
 
 export enum Img {
-	PROF_PIC = "img/cdleveille.webp",
+	PROF_PIC = "/img/cdleveille.webp",
 	SKI = "/img/ski.webp",
 	COPTER = "/img/copter.webp",
 	DISCIT = "/img/discit.webp",
@@ -42,10 +44,11 @@ export enum Img {
 	SLIME = "/img/slime.webp",
 	PUTT = "/img/putt.webp",
 	PIOHOLDEM = "/img/pioholdem.webp",
-	PHUE = "img/phue.webp",
+	PHUE = "/img/phue.webp",
+	KICKUPS = "/img/kickups.webp",
 	GMAIL = "/img/svg/gmail.svg",
 	RESUME = "/img/svg/resume.svg",
-	LINKEDIN = "img/svg/linkedin.svg",
+	LINKEDIN = "/img/svg/linkedin.svg",
 	GITHUB = "/img/svg/github.svg",
 	SALESFORCE = "/img/svg/salesforce.svg"
 }
