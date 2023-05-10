@@ -266,8 +266,10 @@ const Index: NextPage = () => {
 								<Project
 									name="pioholdem"
 									description="Heads-up no-limit Texas Holdem bot. AI from multiple sources including PioSOLVER game trees and Nash Equilibrium push/fold charts."
+									linkHref={Url.PIOHOLDEM}
 									repoLinkHref={Url.PIOHOLDEM_REPO}
 									imgSrc={Img.PIOHOLDEM}
+									action={Action.PLAY}
 								/>
 							</>
 						}
