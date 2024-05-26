@@ -1,17 +1,18 @@
-import { ReactElement } from "react";
+import { Stack } from "@mui/material";
 
 interface ISectionProps {
-	id: string;
-	className?: string;
-	content: ReactElement;
+	children: React.ReactNode;
+	title: string;
+	id?: string;
 }
 
-const Section: React.FC<ISectionProps> = ({ id, className, content }) => {
+export const Section = ({ children, title, id }: ISectionProps) => {
 	return (
-		<div id={id} className={`section ${className}`}>
-			{content}
-		</div>
+		<section className="section" id={id}>
+			<Stack spacing="1rem">
+				<h2 className="section-title">{title}</h2>
+				<div>{children}</div>
+			</Stack>
+		</section>
 	);
 };
-
-export default Section;

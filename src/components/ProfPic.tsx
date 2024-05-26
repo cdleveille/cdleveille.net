@@ -1,12 +1,7 @@
-import { Img } from "../types/constants";
+import Image from "next/image";
 
-interface IProfPicProps {
-	id?: string;
-	className?: string;
-}
+import { ImgSrc } from "@constants";
 
-const ProfPic: React.FC<IProfPicProps> = ({ id, className }) => {
-	return <img id={id} className={className} src={Img.PROF_PIC} alt="Chris Leveille" width="460" height="460" />;
-};
-
-export default ProfPic;
+export const ProfPic = () => (
+	<Image src={ImgSrc.PROF_PIC} width={300} height={300} alt="Chris Leveille" className="prof-pic" priority={true} />
+);
