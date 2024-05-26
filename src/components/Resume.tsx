@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 
 import { Link } from "@components";
+import { Route } from "@constants";
 import { RESUME } from "@content";
 import { Stack } from "@mui/material";
 
@@ -12,8 +13,7 @@ export const Resume = () => {
 
 	const print = useReactToPrint({
 		content: () => printRef.current,
-		pageStyle:
-			"@page{ margin: 0; size: portrait; } * { font-family: Arial, Helvetica, sans-serif; } .resume-links { background-color: cyan; }",
+		pageStyle: "@page{ margin: 0; size: portrait; } * { font-family: Arial, Helvetica, sans-serif; }",
 		documentTitle: "christopher_leveille_resume.pdf"
 	});
 
@@ -22,14 +22,14 @@ export const Resume = () => {
 	return (
 		<Stack spacing="3rem" className="page-content align-left">
 			<Stack direction="row" spacing="2rem">
-				<Link href="/">Home</Link>
-				<Link onClick={() => print()}>Print</Link>
+				<Link href={Route.HOME}>Home</Link>
+				<Link onClick={print}>Print</Link>
 			</Stack>
 			<Stack spacing="1rem" className="resume" ref={printRef}>
 				<div className="resume-name align-center">{name}</div>
 				<div className="resume-links">
 					{links.map(({ label, href }, i) => (
-						<Link href={href ?? label} className="resume-link" newTab key={i}>
+						<Link href={href} className="resume-link" newTab key={i}>
 							{label}
 						</Link>
 					))}

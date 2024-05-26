@@ -18,7 +18,7 @@ export type Resume = {
 
 type ResumeLink = {
 	label: string;
-	href?: string;
+	href: string;
 };
 
 type ResumeExperience = {
