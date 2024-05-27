@@ -19,7 +19,7 @@ export const Projects = () => {
 						<Stack spacing="0.5rem" className="project-about">
 							<h3 className="project-name">{name}</h3>
 							<p>{description}</p>
-							<Stack direction="row" spacing="1rem" className="project-about-stack">
+							<Stack direction="row" spacing="2rem">
 								<Link href={linkHref} newTab>
 									{linkLabel}
 								</Link>
