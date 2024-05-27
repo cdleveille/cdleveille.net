@@ -15,12 +15,7 @@ body {
 a {
 	transition: 0.25s;
 	color: #59a6ff;
-}
-
-a:link,
-a:visited {
-	color: #59a6ff;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:focus,
@@ -113,10 +108,11 @@ p {
 
 .resume-link {
 	color: black !important;
+	text-decoration: none !important;
 }
 
 .resume-link:hover {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 .resume-section-title {
