@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 
-import { Resume } from "@components";
-
-export const metadata: Metadata = {
-	title: "Chris Leveille - Resume"
-};
+import { Page, Resume, ResumeLinks } from "@components";
 
 const ResumePage = () => {
 	return (
-		<main className="page-container">
+		<Page>
+			<ResumeLinks />
 			<Resume />
-		</main>
+		</Page>
 	);
 };
 
 export default ResumePage;
+
+export const metadata: Metadata = {
+	title: "Chris Leveille - Resume"
+};
