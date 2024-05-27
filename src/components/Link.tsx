@@ -8,15 +8,15 @@ interface ILinkProps {
 	className?: string;
 }
 
-export const Link = ({ children, href, onClick, newTab, className }: ILinkProps) => {
+export const Link = ({ children, href, onClick, newTab, ...rest }: ILinkProps) => {
 	if (href)
 		return (
-			<NextLink href={href} target={newTab ? "_blank" : "_self"} className={className ?? "link"}>
+			<NextLink href={href} target={newTab ? "_blank" : "_self"} {...rest}>
 				{children ?? href}
 			</NextLink>
 		);
 	return (
-		<a onClick={onClick} className={className ?? "link"}>
+		<a onClick={onClick} {...rest}>
 			{children ?? href}
 		</a>
 	);

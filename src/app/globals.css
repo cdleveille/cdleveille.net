@@ -25,6 +25,7 @@ a:visited {
 
 a:focus,
 .focus a {
+	color: white;
 	outline: none !important;
 }
 
