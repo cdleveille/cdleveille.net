@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 
-import { Page, Resume, ResumeLinks } from "@components";
+import { Link, Page, Print, Resume } from "@components";
+import { Route } from "@constants";
+import { Stack } from "@mui/material";
 
 const ResumePage = () => {
 	return (
 		<Page>
-			<ResumeLinks />
+			<Stack direction="row" spacing="2rem" className="no-print">
+				<Link href={Route.HOME}>Home</Link>
+				<Print />
+			</Stack>
 			<Resume />
 		</Page>
 	);

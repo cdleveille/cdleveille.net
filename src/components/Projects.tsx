@@ -16,7 +16,7 @@ export const Projects = () => {
 						className="project"
 						key={i}
 					>
-						<Stack spacing="0.5rem" className="project-about">
+						<Stack spacing="0.5rem" className="project-info">
 							<h3 className="project-name">{name}</h3>
 							<p>{description}</p>
 							<Stack direction="row" spacing="2rem">
