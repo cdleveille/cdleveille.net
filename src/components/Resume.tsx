@@ -6,7 +6,7 @@ export const Resume = () => {
 	const { name, links, experience, education, skills, certifications } = RESUME;
 
 	return (
-		<Stack spacing="1rem" className="resume align-left">
+		<Stack spacing="0.5rem" className="resume align-left">
 			<div className="resume-name align-center">{name}</div>
 			<div className="resume-links">
 				{links.map(({ label, href }, i) => (
@@ -25,7 +25,7 @@ export const Resume = () => {
 									direction="row"
 									spacing="0.5rem"
 									divider={<Divider />}
-									style={{ marginLeft: "1rem" }}
+									style={{ marginLeft: Indent.L1 }}
 								>
 									<Link href={link} className="resume-link" newTab key={i}>
 										{nonBreaking(company)}
@@ -39,12 +39,12 @@ export const Resume = () => {
 												direction="row"
 												spacing="0.5rem"
 												divider={<Divider />}
-												style={{ marginLeft: "3rem", marginTop: "0.5rem" }}
+												style={{ marginLeft: Indent.L2, marginTop: "0.25rem" }}
 											>
 												<div>{nonBreaking(title)}</div>
 												<div>{nonBreaking(`${startDate} - ${endDate}`)}</div>
 											</Stack>
-											<ul style={{ marginLeft: "6rem" }}>
+											<ul style={{ marginLeft: Indent.L3 }}>
 												{description.map((desc, k) => (
 													<li key={k}>{desc}</li>
 												))}
@@ -59,7 +59,7 @@ export const Resume = () => {
 			</div>
 			<div>
 				<div className="resume-section-title">Education</div>
-				<Stack spacing="1rem" style={{ marginLeft: "1rem" }}>
+				<Stack spacing="1rem" style={{ marginLeft: Indent.L1 }}>
 					<div>
 						<Stack direction="row" spacing="0.5rem" divider={<Divider />}>
 							<Link href={education.link} className="resume-link" newTab>
@@ -74,27 +74,27 @@ export const Resume = () => {
 						</Stack>
 					</div>
 					<div>
-						<b>Relevant Coursework:&nbsp;&nbsp;</b>
+						<b>Relevant Coursework:&nbsp;</b>
 						{education.relevantCoursework.join(", ")}
 					</div>
 				</Stack>
 			</div>
 			<div>
 				<div className="resume-section-title">Skills</div>
-				<Stack spacing="1rem" style={{ marginLeft: "1rem" }}>
+				<Stack spacing="1rem" style={{ marginLeft: Indent.L1 }}>
 					<div>
-						<b>Programming Languages:&nbsp;&nbsp;</b>
+						<b>Programming Languages:&nbsp;</b>
 						{skills.programmingLanguages.join(", ")}
 					</div>
 					<div>
-						<b>Software Proficiencies:&nbsp;&nbsp;</b>
+						<b>Software Proficiencies:&nbsp;</b>
 						{skills.softwareProficiencies.join(", ")}
 					</div>
 				</Stack>
 			</div>
 			<div>
 				<div className="resume-section-title">Certifications</div>
-				<Stack spacing="1rem" style={{ marginLeft: "1rem" }}>
+				<Stack spacing="1rem" style={{ marginLeft: Indent.L1 }}>
 					{certifications.map(({ name, dateIssued, credentialId, link }, i) => {
 						return (
 							<div key={i}>
@@ -117,3 +117,9 @@ export const Resume = () => {
 const Divider = () => <span className="divider">|</span>;
 
 const nonBreaking = (text: string) => text.replace(/ /g, "\u00a0");
+
+enum Indent {
+	L1 = "1.5rem",
+	L2 = "3rem",
+	L3 = "4.2rem"
+}
