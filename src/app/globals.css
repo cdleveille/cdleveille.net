@@ -15,7 +15,7 @@ body {
 a {
 	transition: 0.25s;
 	color: #59a6ff;
-	text-decoration: underline;
+	text-decoration: underline rgba(89, 166, 255, 0);
 }
 
 a:focus,
@@ -28,6 +28,7 @@ a:hover {
 	color: white;
 	transition: 0.25s;
 	cursor: pointer;
+	text-decoration: underline rgba(255, 255, 255, 0);
 }
 
 p {
