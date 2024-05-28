@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export const Putt = () => {
 	return (
 		<>
@@ -7,7 +9,7 @@ export const Putt = () => {
 					cursor: "crosshair"
 				}}
 			/>
-			<script src="/app/putt/src/putt.min.js" defer></script>
+			<Script src="/app/putt/src/putt.min.js" />
 		</>
 	);
 };
