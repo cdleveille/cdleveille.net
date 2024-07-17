@@ -1,3 +1,5 @@
+"use client";
+
 import { Section } from "@components";
 
 export const About = () => {
