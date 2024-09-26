@@ -32,7 +32,7 @@ export const Experience = () => {
 						certified
 					</Link>{" "}
 					as a developer in the Salesforce Platform. Outside of work, I like to spend time on personal
-					projects using technologies such as Node.js, Bun, MongoDB, Socket.IO, and React.
+					projects using technologies such as Node.js, Bun, Socket.IO, Next.js, and React.
 				</p>
 				<p>
 					For more information, check out my <Link href={Route.RESUME}>resume</Link>.

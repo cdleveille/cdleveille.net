@@ -44,6 +44,14 @@ export const PROJECTS: Project[] = [
 		imgSrc: ImgSrc.KICKUPS
 	},
 	{
+		name: "amazing-brick",
+		description: "How high will you climb?",
+		linkLabel: "Play",
+		linkHref: Href.AMAZING_BRICK,
+		repoHref: Href.AMAZING_BRICK_REPO,
+		imgSrc: ImgSrc.AMAZING_BRICK
+	},
+	{
 		name: "phue",
 		description: "Control your Philips Hue smart lights from your PC.",
 		linkLabel: "Launch",
