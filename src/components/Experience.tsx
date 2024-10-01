@@ -31,8 +31,28 @@ export const Experience = () => {
 					<Link href={Href.SF_CERT} newTab>
 						certified
 					</Link>{" "}
-					as a developer in the Salesforce Platform. Outside of work, I like to spend time on personal
-					projects using technologies such as Node.js, Bun, Socket.IO, Next.js, and React.
+					as a developer in the Salesforce Platform. Outside of work, I like to spend time building things
+					with technologies such as{" "}
+					<Link href="https://nodejs.org" newTab>
+						Node.js
+					</Link>
+					,{" "}
+					<Link href="https://bun.sh" newTab>
+						Bun
+					</Link>
+					,{" "}
+					<Link href="https://socket.io" newTab>
+						Socket.IO
+					</Link>
+					,{" "}
+					<Link href="https://nextjs.org" newTab>
+						Next.js
+					</Link>
+					, and{" "}
+					<Link href="https://react.dev" newTab>
+						React
+					</Link>
+					.
 				</p>
 				<p>
 					For more information, check out my <Link href={Route.RESUME}>resume</Link>.
