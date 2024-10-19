@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		name: "amazing-brick",
-		description: "How high will you climb?",
+		description: "How high can you climb?",
 		linkLabel: "Play",
 		linkHref: Href.AMAZING_BRICK,
 		repoHref: Href.AMAZING_BRICK_REPO,
