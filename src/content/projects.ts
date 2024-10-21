@@ -60,9 +60,17 @@ export const PROJECTS: Project[] = [
 		imgSrc: ImgSrc.PHUE
 	},
 	{
+		name: "bun-bundle",
+		description: "A lightweight module bundler wrapping Bun.build",
+		linkLabel: "Browse",
+		linkHref: Href.BUN_BUNDLE,
+		repoHref: Href.BUN_BUNDLE_REPO,
+		imgSrc: ImgSrc.BUN_BUNDLE
+	},
+	{
 		name: "gamepad-helper",
 		description: "Lightweight, zero-dependency wrapper class for the HTML5 Gamepad API.",
-		linkLabel: "Launch",
+		linkLabel: "Browse",
 		linkHref: Href.GAMEPAD_HELPER,
 		repoHref: Href.GAMEPAD_HELPER_REPO,
 		imgSrc: ImgSrc.GAMEPAD_HELPER
