@@ -1,5 +1,4 @@
 import { Href } from "@constants";
-
 import type { Resume } from "@types";
 
 export const RESUME: Resume = {
@@ -30,8 +29,7 @@ export const RESUME: Resume = {
 			positions: [
 				{
 					title: "Software Engineer",
-					startDate: "April 2022",
-					endDate: "Present",
+					startDate: { month: 4, year: 2022 },
 					description: [
 						"Develop and maintain an electronic forms solution used by state environmental agencies."
 					]
@@ -45,14 +43,14 @@ export const RESUME: Resume = {
 			positions: [
 				{
 					title: "Contract Software Engineer",
-					startDate: "November 2021",
-					endDate: "February 2022",
+					startDate: { month: 11, year: 2021 },
+					endDate: { month: 2, year: 2022 },
 					description: ["Processed farmer-borrower data for year end tax form distribution and reporting."]
 				},
 				{
 					title: "Software Engineer II",
-					startDate: "April 2017",
-					endDate: "October 2021",
+					startDate: { month: 4, year: 2017 },
+					endDate: { month: 10, year: 2021 },
 					description: [
 						"Produced and supported loan origination/customer relationship management software used by Agricultural Credit Associations of the Farm Credit System.",
 						"Supported production environments of multiple retail lending institutions, designed/developed/reviewed release work items."
@@ -67,8 +65,8 @@ export const RESUME: Resume = {
 			positions: [
 				{
 					title: "Software Engineer",
-					startDate: "December 2014",
-					endDate: "March 2017",
+					startDate: { month: 12, year: 2014 },
+					endDate: { month: 3, year: 2017 },
 					description: ["Developed software modules for a dynamic military network management application."]
 				}
 			]
@@ -80,8 +78,8 @@ export const RESUME: Resume = {
 			positions: [
 				{
 					title: "Web Developer",
-					startDate: "July 2014",
-					endDate: "November 2014",
+					startDate: { month: 7, year: 2014 },
+					endDate: { month: 11, year: 2014 },
 					description: [
 						"Assisted in the development and inventory management of web stores for regional bicycle, ski, and outerwear vendors including Valley Bike & Ski Werks, J Skis, and Orage."
 					]

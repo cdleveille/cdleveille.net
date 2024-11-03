@@ -30,8 +30,8 @@ type ResumeExperience = {
 
 type ResumeExperiencePosition = {
 	title: string;
-	startDate: string;
-	endDate: string;
+	startDate: DateMonthYear;
+	endDate?: DateMonthYear;
 	description: string[];
 };
 
@@ -55,4 +55,9 @@ type ResumeCertification = {
 	dateIssued: string;
 	credentialId: string;
 	link: string;
+};
+
+export type DateMonthYear = {
+	month: number;
+	year: number;
 };

@@ -1,6 +1,7 @@
 import { Link } from "@components";
 import { RESUME } from "@content";
 import { Stack } from "@mui/material";
+import { displayDateMonthYear, getDateDifference } from "@util";
 
 export const Resume = () => {
 	const { name, links, experience, education, skills, certifications } = RESUME;
@@ -42,7 +43,11 @@ export const Resume = () => {
 												style={{ marginLeft: Indent.L2, marginTop: "0.25rem" }}
 											>
 												<div>{nonBreaking(title)}</div>
-												<div>{nonBreaking(`${startDate} - ${endDate}`)}</div>
+												<div>
+													{nonBreaking(
+														`${displayDateMonthYear(startDate)} - ${endDate ? displayDateMonthYear(endDate) : "Present"} (${getDateDifference(startDate, endDate)})`
+													)}
+												</div>
 											</Stack>
 											<ul style={{ marginLeft: Indent.L3 }}>
 												{description.map((desc, k) => (
