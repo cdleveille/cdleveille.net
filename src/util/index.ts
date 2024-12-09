@@ -55,3 +55,5 @@ export const getMonth = (month: number) => {
 export const displayDateMonthYear = (date: DateMonthYear) => {
 	return `${getMonth(date.month)} ${date.year}`;
 };
+
+export const nonBreaking = (text: string) => text.replace(/ /g, "\u00a0");
