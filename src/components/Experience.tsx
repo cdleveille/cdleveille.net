@@ -31,8 +31,8 @@ export const Experience = () => {
 					<Link href={Href.SF_CERT} newTab>
 						certified
 					</Link>{" "}
-					as a developer in the Salesforce Platform. Outside of work, I like to spend time building things
-					with technologies such as{" "}
+					as a developer in the Salesforce Platform. Outside of work, I like to build things with technologies
+					such as{" "}
 					<Link href="https://nodejs.org" newTab>
 						Node.js
 					</Link>
