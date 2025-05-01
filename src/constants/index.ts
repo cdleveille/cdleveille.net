@@ -31,7 +31,7 @@ export enum Href {
 	SKIFREEJS_REPO = "https://github.com/cdleveille/skifreejs",
 	COPTERJS = "https://copterjs.fly.dev",
 	COPTERJS_REPO = "https://github.com/cdleveille/copterjs",
-	DISCIT = "https://discit.vercel.app",
+	DISCIT = "https://discit.app",
 	DISCIT_REPO = "https://github.com/DiscIt-API/discit",
 	DISCIT_API = "https://discit-api.fly.dev",
 	DISCIT_API_REPO = "https://github.com/DiscIt-API/discit-api",
