@@ -24,7 +24,7 @@ export enum Href {
 	EMAIL = "mailto:cdleveille@gmail.com",
 	LINKEDIN = "https://www.linkedin.com/in/cdleveille",
 	GITHUB = "https://github.com/cdleveille",
-	WEBSITE = "https://www.cdleveille.net",
+	WEBSITE = "https://cdleveille.net",
 	TRAILBLAZER = "https://trailblazer.me/id/cdleveille",
 	YOUTUBE = "https://www.youtube.com/@cdleveille",
 	SKIFREEJS = "https://skifreejs.fly.dev",
