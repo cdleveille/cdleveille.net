@@ -1,4 +1,4 @@
-# [cdleveille.net](https://www.cdleveille.net)
+# [cdleveille.net](https://cdleveille.net)
 
 Personal website built with Next.js.
 

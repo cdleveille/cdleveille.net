@@ -21,7 +21,7 @@ export default HomePage;
 export const metadata: Metadata = {
 	title: "Chris Leveille - Software Engineer",
 	description: "Hello! My name is Chris and I am a software engineer from Western Massachusetts.",
-	authors: { name: "Chris Leveille", url: "https://www.cdleveille.net" },
+	authors: { name: "Chris Leveille", url: "https://cdleveille.net" },
 	openGraph: {
 		title: "Chris Leveille - Software Engineer",
 		description: "Hello! My name is Chris and I am a software engineer from Western Massachusetts.",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		lastName: "Leveille",
 		username: "cdleveille",
 		emails: "cdleveille@gmail.com",
-		url: "https://www.cdleveille.net",
+		url: "https://cdleveille.net",
 		images: {
 			url: "https://avatars.githubusercontent.com/u/1410481",
 			secureUrl: "https://avatars.githubusercontent.com/u/1410481",
