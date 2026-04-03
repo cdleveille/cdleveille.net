@@ -28,7 +28,7 @@ export const Experience = () => {
 				<p>
 					I am a full-stack engineer with professional programming experience primarily in JavaScript,
 					TypeScript, C#, and SQL. I am also professionally{" "}
-					<Link href={Href.SF_CERT} newTab>
+					<Link href={Href.TRAILBLAZER} newTab>
 						certified
 					</Link>{" "}
 					as a developer in the Salesforce Platform. Outside of work, I like to build things with technologies
@@ -45,8 +45,8 @@ export const Experience = () => {
 						Socket.IO
 					</Link>
 					,{" "}
-					<Link href="https://nextjs.org" newTab>
-						Next.js
+					<Link href="https://tanstack.com" newTab>
+						TanStack
 					</Link>
 					, and{" "}
 					<Link href="https://react.dev" newTab>
